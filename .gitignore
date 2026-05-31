@@ -1,0 +1,8 @@
+# kommandr public release repo: only the README + installers belong here.
+# Binaries ship as GitHub Release assets, never committed to git.
+kommandr-*
+*.bak
+dist/
+VERSION
+*-output.txt
+.DS_Store
