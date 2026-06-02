@@ -35,16 +35,16 @@ Soft keyboards can't send `Esc`, the arrow keys, `Ctrl-C`, or `Tab` — the keys
 
 ## How it works
 
-`kommandr` starts a small server bound to `127.0.0.1`, attaches it to a persistent terminal session (tmux on macOS/Linux, PowerShell via ConPTY on Windows), and opens a free [Cloudflare quick tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/do-more-with-tunnels/trycloudflare/) so your phone can reach it over TLS. The QR it prints points at that tunnel.
+`kommandr` runs a persistent terminal session (tmux on macOS/Linux, PowerShell via ConPTY on Windows) and connects it to the kommandr relay — a Cloudflare Worker — by dialing **out** over an encrypted WebSocket. Your phone opens the same relay (that's what the QR points at) and the two are paired into your session over TLS. Because the desktop only makes an outbound connection, there's no inbound port and nothing to forward.
 
-It runs in the foreground — close the terminal or press `Ctrl-C` and the server stops.
+It runs in the foreground — close the terminal or press `Ctrl-C` and it stops. (Prefer a [Cloudflare quick tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/do-more-with-tunnels/trycloudflare/) instead? Set `KOMMANDR_TRANSPORT=cloudflared`.)
 
 ## Security
 
-- The server binds to **loopback only**; the tunnel is the only way in.
-- Every connection is **token-gated** with a constant-time compare. The token is a 32-byte secret at `~/.kommandr/token` (`0600`) — the tunnel URL is useless without it.
+- The desktop **dials out** — it opens no inbound port and forwards nothing, so there's no surface to attack.
+- Every connection is **token-gated** with a constant-time compare. The token is a 32-byte secret at `~/.kommandr/token` (`0600`); the relay only pairs your phone to your session when the token matches.
 - The QR embeds that token and prints to your **console only**, so there's no web page handing it out.
-- The tunnel URL is ephemeral (new every run); the token persists.
+- Traffic runs over TLS; each run uses a fresh random session id, and the token persists.
 
 ## Updating
 
@@ -60,10 +60,12 @@ Set `KOMMANDR_NO_UPDATE=1` to skip the startup check.
 
 | command / env | what it does |
 |---|---|
-| `kommandr` | start the server and print the QR |
+| `kommandr` | connect your session and print the QR |
 | `kommandr update` | update to the latest release now |
 | `kommandr version` | print the installed version |
-| `PORT=8722` | local server port (default `8722`) |
+| `KOMMANDR_TRANSPORT=cloudflared` | use a cloudflared quick tunnel instead of the relay |
+| `KOMMANDR_RELAY_URL=…` | point at a different relay (e.g. your own deployment) |
+| `PORT=8722` | local port for the cloudflared fallback (default `8722`) |
 | `KOMMANDR_NO_UPDATE=1` | skip the startup update check |
 
 ## Requirements
