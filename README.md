@@ -39,12 +39,28 @@ Soft keyboards can't send `Esc`, the arrow keys, `Ctrl-C`, or `Tab` — the keys
 
 It runs in the foreground — close the terminal or press `Ctrl-C` and it stops. (Prefer a [Cloudflare quick tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/do-more-with-tunnels/trycloudflare/) instead? Set `KOMMANDR_TRANSPORT=cloudflared`.)
 
+## Notifications
+
+Get a push notification on your phone when your agent finishes or needs input.
+
+1. Open kommandr on your phone (scan the QR).
+2. **iPhone:** tap **Share → Add to Home Screen**, then open kommandr from the home screen — iOS only delivers web push to installed web apps. **Android / desktop Chrome:** skip this; no install needed.
+3. Tap **🔔** in the key bar and allow notifications.
+
+To fire one exactly when Claude Code finishes responding, add a hook to `~/.claude/settings.json`:
+
+```json
+{ "hooks": { "Stop": [ { "hooks": [ { "type": "command", "command": "kommandr notify \"Claude finished\"" } ] } ] } }
+```
+
+kommandr also notifies automatically when the agent rings the terminal bell (set `KOMMANDR_BELL_NOTIFY=0` to disable).
+
 ## Security
 
 - The desktop **dials out** — it opens no inbound port and forwards nothing, so there's no surface to attack.
 - Every connection is **token-gated** with a constant-time compare. The token is a 32-byte secret at `~/.kommandr/token` (`0600`); the relay only pairs your phone to your session when the token matches.
 - The QR embeds that token and prints to your **console only**, so there's no web page handing it out.
-- Traffic runs over TLS; each run uses a fresh random session id, and the token persists.
+- Traffic runs over TLS. The session id and token are persistent per-machine secrets under `~/.kommandr/` (`0600`); the URL is useless without the token.
 
 ## Updating
 
