@@ -15,7 +15,9 @@ $ErrorActionPreference = 'Stop'
 $Repo     = 'colbymchenry/kommandr'
 $KommHome = if ($env:KOMMANDR_HOME) { $env:KOMMANDR_HOME } else { Join-Path $HOME '.kommandr' }
 $BinStore = Join-Path $KommHome 'bin'
-$Version  = if ($env:KOMMANDR_VERSION) { $env:KOMMANDR_VERSION } else { 'latest' }
+# Default pinned to the last CLI release: the public repo's releases/latest is the
+# DESKTOP app (tags desktop-vX.Y.Z, owned by ../kommandr-app). Bump when cutting a CLI release.
+$Version  = if ($env:KOMMANDR_VERSION) { $env:KOMMANDR_VERSION } else { 'v0.5.0' }
 
 function Say($m) { Write-Host "[kommandr] $m" -ForegroundColor Cyan }
 function Die($m) { Write-Host "[kommandr] $m" -ForegroundColor Red; exit 1 }

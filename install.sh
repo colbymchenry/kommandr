@@ -55,7 +55,9 @@ elif command -v wget >/dev/null 2>&1; then dl() { wget -qO "$2" "$1"; }
 else die "need curl or wget to download."
 fi
 
-VER="${KOMMANDR_VERSION:-latest}"
+# Default pinned to the last CLI release: the public repo's releases/latest is the
+# DESKTOP app (tags desktop-vX.Y.Z, owned by ../kommandr-app). Bump when cutting a CLI release.
+VER="${KOMMANDR_VERSION:-v0.5.0}"
 if   [ -n "${KOMMANDR_BASE_URL:-}" ]; then base="${KOMMANDR_BASE_URL%/}"
 elif [ "$VER" = latest ];            then base="https://github.com/$REPO/releases/latest/download"
 else                                      base="https://github.com/$REPO/releases/download/$VER"
