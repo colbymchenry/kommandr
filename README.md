@@ -1,94 +1,32 @@
-# kommandr
+# Kommandr
 
-Drive your terminal AI coding agents — Claude Code, Gemini CLI, Codex, any of them — from your phone.
+AI-assisted project management for software teams: a macOS desktop app that keeps your
+issues, epics and sprints next to the AI coding agents that work on them — Claude Code,
+Codex, Gemini, Cursor, Copilot and more — with a phone companion to check on runs from anywhere.
 
-Run `kommandr` on your machine, scan the QR it prints, and your terminal session (with the agent running in it) opens on your phone — with an on-screen key bar so you can actually steer an agent on a touch keyboard.
+This repository holds **releases only** — the desktop app builds and the changelog. Source
+lives in private repositories.
 
-## Install
+## Kommandr desktop app (macOS)
 
-**macOS / Linux**
+Download the latest build, open the `.dmg`, and drag Kommandr to Applications:
 
-```sh
-curl -fsSL https://raw.githubusercontent.com/colbymchenry/kommandr/main/install.sh | sh
-```
-
-**Windows** (PowerShell)
-
-```powershell
-irm https://raw.githubusercontent.com/colbymchenry/kommandr/main/install.ps1 | iex
-```
-
-Then run it and scan the QR with your phone camera — no app required:
-
-```sh
-kommandr
-```
-
-## Why kommandr
-
-Soft keyboards can't send `Esc`, the arrow keys, `Ctrl-C`, or `Tab` — the keys you constantly reach for when driving an agent. kommandr puts a key bar on screen for exactly those, so checking on and steering a long-running agent from your phone actually works.
-
-- One command, one QR — no SSH setup, no account, no port forwarding.
-- A real terminal in the browser (xterm.js), live-resizing to your screen.
-- Your session persists — lock your phone, come back later, it's still running.
-- A single self-contained binary that keeps itself up to date.
-
-## How it works
-
-`kommandr` runs a persistent terminal session (tmux on macOS/Linux, PowerShell via ConPTY on Windows) and connects it to the kommandr relay — a Cloudflare Worker — by dialing **out** over an encrypted WebSocket. Your phone opens the same relay (that's what the QR points at) and the two are paired into your session over TLS. Because the desktop only makes an outbound connection, there's no inbound port and nothing to forward.
-
-It runs in the foreground — close the terminal or press `Ctrl-C` and it stops. (Prefer a [Cloudflare quick tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/do-more-with-tunnels/trycloudflare/) instead? Set `KOMMANDR_TRANSPORT=cloudflared`.)
-
-## Notifications
-
-Get a push notification on your phone when your agent finishes or needs input.
-
-1. Open kommandr on your phone (scan the QR).
-2. **iPhone:** tap **Share → Add to Home Screen**, then open kommandr from the home screen — iOS only delivers web push to installed web apps. **Android / desktop Chrome:** skip this; no install needed.
-3. Tap **🔔** in the key bar and allow notifications.
-
-To fire one exactly when Claude Code finishes responding, add a hook to `~/.claude/settings.json`:
-
-```json
-{ "hooks": { "Stop": [ { "hooks": [ { "type": "command", "command": "kommandr notify \"Claude finished\"" } ] } ] } }
-```
-
-kommandr also notifies automatically when the agent rings the terminal bell (set `KOMMANDR_BELL_NOTIFY=0` to disable).
-
-## Security
-
-- The desktop **dials out** — it opens no inbound port and forwards nothing, so there's no surface to attack.
-- Every connection is **token-gated** with a constant-time compare. The token is a 32-byte secret at `~/.kommandr/token` (`0600`); the relay only pairs your phone to your session when the token matches.
-- The QR embeds that token and prints to your **console only**, so there's no web page handing it out.
-- Traffic runs over TLS. The session id and token are persistent per-machine secrets under `~/.kommandr/` (`0600`); the URL is useless without the token.
-
-## Updating
-
-kommandr checks for a newer release on startup, verifies the download's sha256, swaps itself, and restarts. To update on demand:
-
-```sh
-kommandr update
-```
-
-Set `KOMMANDR_NO_UPDATE=1` to skip the startup check.
-
-## Commands & options
-
-| command / env | what it does |
+| Mac | Download |
 |---|---|
-| `kommandr` | connect your session and print the QR |
-| `kommandr update` | update to the latest release now |
-| `kommandr version` | print the installed version |
-| `KOMMANDR_TRANSPORT=cloudflared` | use a cloudflared quick tunnel instead of the relay |
-| `KOMMANDR_RELAY_URL=…` | point at a different relay (e.g. your own deployment) |
-| `PORT=8722` | local port for the cloudflared fallback (default `8722`) |
-| `KOMMANDR_NO_UPDATE=1` | skip the startup update check |
+| Apple silicon (M1 and later) | [Kommandr-arm64.dmg](https://github.com/colbymchenry/kommandr/releases/latest/download/Kommandr-arm64.dmg) |
+| Intel | [Kommandr-x64.dmg](https://github.com/colbymchenry/kommandr/releases/latest/download/Kommandr-x64.dmg) |
 
-## Requirements
+Every build is Developer ID signed and notarized by Apple. The app checks for updates
+itself and offers to install them; see [CHANGELOG.md](./CHANGELOG.md) for what's in each
+version, or browse the [releases](https://github.com/colbymchenry/kommandr/releases)
+(desktop releases are tagged `desktop-vX.Y.Z`). Checksums ship alongside every release as
+`SHA256SUMS`.
 
-- **macOS / Linux:** `tmux` (the installer offers to install it for you).
-- **Windows:** Windows 10/11, x64 or ARM64 — uses built-in PowerShell, no WSL needed.
+Windows and Linux builds are not available yet. This is an early alpha — expect rough edges,
+and please report anything broken.
 
----
+### Phone companion
 
-Built by [Colby McHenry](https://github.com/colbymchenry).
+The Kommandr iOS app pairs with the desktop app by QR code so you can follow task runs,
+answer an agent's questions, and start work from your phone. It is distributed through
+TestFlight — ask for an invite.
