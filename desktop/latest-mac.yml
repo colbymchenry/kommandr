@@ -1,17 +1,17 @@
-version: 0.0.1
+version: 0.0.2
 files:
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.0.1/Kommandr-arm64.zip
-    sha512: fBmm8WVnXm4fMSs8rKrdGbyDEYg0DRJVL7AAKuZsW4ZmInU1WA0Ia59ccsEJiepK7CLrJPFJz8eqJSmue6AT1Q==
-    size: 198015914
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.0.1/Kommandr-arm64.dmg
-    sha512: rMD98/JK48LLYzlgOTIoDvDfF5pGdMhngSepjKRwmN6Sf7BkbJElbMqN7lBQs79iqpt6rwYxi5t4WoGuPDWmow==
-    size: 206455401
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.0.1/Kommandr-x64.zip
-    sha512: ptG9i/Owavj/YgKebYurBLQDRZUMllefTXt32WspwqWmO6TYyKjQjyvgF5LgdxKU2TAEU5z0wCrcyFtilJyL9g==
-    size: 205069679
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.0.1/Kommandr-x64.dmg
-    sha512: Xbccq527r0zqnLGGChASCpUUCgqGK5JRJuuZC3/e4JhrgIfJh73D+dvlwWLDPkHrox0Z5PrWF/rIyxR16/ye4g==
-    size: 212993163
-path: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.0.1/Kommandr-arm64.zip
-sha512: fBmm8WVnXm4fMSs8rKrdGbyDEYg0DRJVL7AAKuZsW4ZmInU1WA0Ia59ccsEJiepK7CLrJPFJz8eqJSmue6AT1Q==
-releaseDate: 2026-08-27T18:40:54.740Z
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.0.2/Kommandr-arm64.zip
+    sha512: HWnPIkTWR+XSHWqSMlj5Oz6/+pXWhv5c3CzGClk7yhJWLcu7YQI9rNH2D4B+7SZ/W8x49qkIh8SWtmwiwsjr8g==
+    size: 197936308
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.0.2/Kommandr-arm64.dmg
+    sha512: JaT2v22Cg/lelU/lbsfOBCc+ntNkjrQ0RIN6vLerHSB2rYi9taKZThx4zYf2dRyCsNRRxrv15PbqKwp087LImg==
+    size: 206311616
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.0.2/Kommandr-x64.zip
+    sha512: +TIdV0MISa8PBKu27h2hOVxY4szYJPq2Ls8AQ+YtwHSE5jSfvWruKqSZh5OOaYV7M4B4j+ROzo4eomYzdZBezw==
+    size: 204990041
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.0.2/Kommandr-x64.dmg
+    sha512: paHOZYi4Y0qAeUwI15UNpeWJeBJ11h3JALMVN/8dUsKu8x8XQm37FTyhU2Rx1xM3hJoCKSehPhn9w8Pwm+eKMg==
+    size: 212895632
+path: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.0.2/Kommandr-arm64.zip
+sha512: HWnPIkTWR+XSHWqSMlj5Oz6/+pXWhv5c3CzGClk7yhJWLcu7YQI9rNH2D4B+7SZ/W8x49qkIh8SWtmwiwsjr8g==
+releaseDate: 2026-08-27T19:10:59.958Z

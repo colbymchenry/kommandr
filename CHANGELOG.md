@@ -14,6 +14,14 @@ and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [Unreleased]
 
 
+## [0.0.2] - 2026-08-27
+
+### Highlights
+- The app icon, the mark in the sidebar, and the sign-in screen now use the same K as kommandr.com.
+
+### Fixes
+- The macOS app icon and the in-app mark were still the old "beads" artwork; they now match the K on kommandr.com, and the installer window no longer says "Beads Dashboard".
+
 ## [0.0.1] - 2026-08-27
 
 ### Highlights
@@ -34,3 +42,4 @@ and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Owners of the Kommandr team were shown the "subscription has ended" screen; they are now treated like staff, and team accounts show an Owner or Staff badge in the footer where the trial countdown would be.
 - A Task Runner handoff note silently shrank to a bare list of files whenever the task's output contained a NUL byte; the full note is written again.
 [0.0.1]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.0.1
+[0.0.2]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.0.2
