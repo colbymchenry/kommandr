@@ -1,17 +1,48 @@
-version: 0.0.2
+version: 0.0.3
 files:
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.0.2/Kommandr-arm64.zip
-    sha512: HWnPIkTWR+XSHWqSMlj5Oz6/+pXWhv5c3CzGClk7yhJWLcu7YQI9rNH2D4B+7SZ/W8x49qkIh8SWtmwiwsjr8g==
-    size: 197936308
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.0.2/Kommandr-arm64.dmg
-    sha512: JaT2v22Cg/lelU/lbsfOBCc+ntNkjrQ0RIN6vLerHSB2rYi9taKZThx4zYf2dRyCsNRRxrv15PbqKwp087LImg==
-    size: 206311616
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.0.2/Kommandr-x64.zip
-    sha512: +TIdV0MISa8PBKu27h2hOVxY4szYJPq2Ls8AQ+YtwHSE5jSfvWruKqSZh5OOaYV7M4B4j+ROzo4eomYzdZBezw==
-    size: 204990041
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.0.2/Kommandr-x64.dmg
-    sha512: paHOZYi4Y0qAeUwI15UNpeWJeBJ11h3JALMVN/8dUsKu8x8XQm37FTyhU2Rx1xM3hJoCKSehPhn9w8Pwm+eKMg==
-    size: 212895632
-path: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.0.2/Kommandr-arm64.zip
-sha512: HWnPIkTWR+XSHWqSMlj5Oz6/+pXWhv5c3CzGClk7yhJWLcu7YQI9rNH2D4B+7SZ/W8x49qkIh8SWtmwiwsjr8g==
-releaseDate: 2026-08-27T19:10:59.958Z
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.0.3/Kommandr-arm64.zip
+    sha512: HK0FuTry2DAlvU/hSK4ZW18EluC6vY8Wiw0oBjj0x68caMc09SsvvMb+pz7nx9UkVjCYAB0r1CWCRNahsx0HhA==
+    size: 198017109
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.0.3/Kommandr-arm64.dmg
+    sha512: HDyNFUZomGFGcTtY612iNqWkkOpSIMD0+2vEYwBffuIQZR4nh2VSmYJwJl4iZTRCnJf9ZAvO96xY7DxNgVhSMQ==
+    size: 206360005
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.0.3/Kommandr-x64.zip
+    sha512: Ejt4+ikmX80HalqcJfix94nw0PlVKMNz7YczAtUmvTS/uUCI52L5yl3+DbMGTR/WfRrZ7hk4oNakRbOdlW54Zw==
+    size: 205070574
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.0.3/Kommandr-x64.dmg
+    sha512: F14KBJVjJjdmh1QQk/g/UYRV6dnwr2D+X4GD7ZRULXO5pMZ8H2DcF4vUJlSf+kKsDwLT87Oim4Z99E4VbhXTng==
+    size: 212974736
+path: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.0.3/Kommandr-arm64.zip
+sha512: HK0FuTry2DAlvU/hSK4ZW18EluC6vY8Wiw0oBjj0x68caMc09SsvvMb+pz7nx9UkVjCYAB0r1CWCRNahsx0HhA==
+releaseDate: 2026-08-27T19:56:53.914Z
+releaseNotes: >
+  ### Highlights
+
+  - Switch projects from the title bar or with ⌘K — recent projects first, type
+  to search all of them.
+
+  - Kommandr now tells you when a new version is out — a prompt with what's new
+  and a download progress bar, and a badge on Settings if you choose "Later".
+
+  - The app no longer opens the developer console on launch.
+
+
+  ### New Features
+
+  - Switch projects from the title bar: the arrow beside the project name (or ⌘K
+  anywhere) opens a menu of your most recently opened projects, and typing
+  searches all of them — the same switcher GitHub puts beside a repository name.
+
+  - When a new version is released, Kommandr shows what's new, downloads it with
+  a progress bar, and offers to restart; dismissing the prompt leaves an update
+  badge on Settings, and Settings → General → Software update lets you check,
+  download, and restart any time.
+
+  - Kommandr keeps checking for updates every few hours while it's open, not
+  just at launch.
+
+
+  ### Fixes
+
+  - The developer tools console opened on every launch of the installed app; it
+  now opens only in development.

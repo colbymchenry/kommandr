@@ -14,6 +14,21 @@ and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [Unreleased]
 
 
+## [0.0.3] - 2026-08-27
+
+### Highlights
+- Switch projects from the title bar or with ⌘K — recent projects first, type to search all of them.
+- Kommandr now tells you when a new version is out — a prompt with what's new and a download progress bar, and a badge on Settings if you choose "Later".
+- The app no longer opens the developer console on launch.
+
+### New Features
+- Switch projects from the title bar: the arrow beside the project name (or ⌘K anywhere) opens a menu of your most recently opened projects, and typing searches all of them — the same switcher GitHub puts beside a repository name.
+- When a new version is released, Kommandr shows what's new, downloads it with a progress bar, and offers to restart; dismissing the prompt leaves an update badge on Settings, and Settings → General → Software update lets you check, download, and restart any time.
+- Kommandr keeps checking for updates every few hours while it's open, not just at launch.
+
+### Fixes
+- The developer tools console opened on every launch of the installed app; it now opens only in development.
+
 ## [0.0.2] - 2026-08-27
 
 ### Highlights
@@ -43,3 +58,4 @@ and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - A Task Runner handoff note silently shrank to a bare list of files whenever the task's output contained a NUL byte; the full note is written again.
 [0.0.1]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.0.1
 [0.0.2]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.0.2
+[0.0.3]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.0.3
