@@ -14,6 +14,23 @@ and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [Unreleased]
 
 
+## [0.2.0] - 2026-09-03
+
+### Highlights
+- Your phone now reaches your Mac at one permanent address. Pair once and stay paired — through sleep, network changes, and restarts — with no QR code to re-scan.
+- Remote access recovers on its own after your Mac sleeps, instead of quietly staying down until you noticed and restarted it.
+- Long chat titles and pasted links no longer overflow their row on the phone.
+
+### New Features
+- Your phone now connects to your Mac through one permanent address instead of a temporary one that changed every time the connection restarted. Pair once and it stays paired — through sleep, through moving between networks, through restarting Kommandr — with no QR code to re-scan and nothing to install. Requires the latest Kommandr app on your phone.
+
+### Fixes
+- Remote access no longer dies for good when your Mac sleeps at the wrong moment. If the connection to your phone was being re-established at the instant the Mac went to sleep, it was abandoned permanently — the phone showed "can't reach your Mac" and re-scanning the QR code was the only way back, even after the Mac woke up. It now keeps retrying on its own until it is back.
+- Your phone stays paired through a sleeping Mac far more often: time the Mac spends asleep no longer counts against the connection, so it is given a real chance to recover on the same address instead of being replaced with a new one — which is what forced a re-scan. A Mac that idles in and out of sleep could previously go through several of these in an evening.
+- On the phone, a chat whose title is a pasted link no longer runs past the edge of its row, and a long opening message is trimmed to two lines instead of stacking up the whole card — on both the Chats screen and a project's chat list.
+- A starred chat on the phone no longer spends an entire line on the star when its title is one long unbroken word.
+- The last paragraph of a document is no longer pinned against the bottom of the editor — scrolling to the end of a long document now leaves room below it again.
+
 ## [0.1.0] - 2026-08-28
 
 ### Highlights
@@ -89,3 +106,4 @@ and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 [0.0.2]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.0.2
 [0.0.3]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.0.3
 [0.1.0]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.1.0
+[0.2.0]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.2.0

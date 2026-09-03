@@ -1,125 +1,64 @@
-version: 0.1.0
+version: 0.2.0
 files:
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.1.0/Kommandr-arm64.zip
-    sha512: MiMet/vMRq0dnhFQO2MNEfA5ErQoq473stWy3+jvdnu6DbjuPF1lw7YZjQLdS7D/iDKxl7aiYawFHBBfScvM2g==
-    size: 201468972
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.1.0/Kommandr-arm64.dmg
-    sha512: ZehNAAeIGEOmRKT1aORzGF+aSrPL+16bzCS+EpeHEqHaZnVkEuAJ99ivP0ZwRJNSl0DCIASSbNIM0OfvZE0pkw==
-    size: 210153647
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.1.0/Kommandr-x64.zip
-    sha512: +jmbM4KlSFFmxkLsnDQaBUQa8dlRvanTxVjoWTsfGfO6qFZRMVRSGL+uOWf586m2EVigzdd4eWfV/hJuuuWXcA==
-    size: 208522928
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.1.0/Kommandr-x64.dmg
-    sha512: KreTn4qmvE+twCriOGHmH8hPHv2hv3H1ZPSprzkV/SL89tCxAcHjcFZRjgDmWbNVM4UaZeWBiCNgmaSK2iymkQ==
-    size: 216748964
-path: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.1.0/Kommandr-arm64.zip
-sha512: MiMet/vMRq0dnhFQO2MNEfA5ErQoq473stWy3+jvdnu6DbjuPF1lw7YZjQLdS7D/iDKxl7aiYawFHBBfScvM2g==
-releaseDate: 2026-08-28T17:00:53.547Z
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.2.0/Kommandr-arm64.zip
+    sha512: 4Z6jT31lsv/XWxPr41Xh8GOAZP4q+d2ItKAce0KqCcASx/up84zHylVPMLzxv+EnVzLTfEehkNhjJn4vVDMLFQ==
+    size: 201544108
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.2.0/Kommandr-arm64.dmg
+    sha512: IpT3lXQrXT+dzs1AzLitFv1lbApytaVIlD86oi8ImdHifICCKj+n3mE1xXZy0XZy+ElvvIyUYclnER43Baz5/w==
+    size: 210314259
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.2.0/Kommandr-x64.zip
+    sha512: c6TzeQ/BWXl4Od8wSxsup9tqYsPWBKoQgkS67XRQ8ZjBbjFq6LnLl2OXu2T3BGO1+VjxL/nSsPFpWzNE3cn1xw==
+    size: 208598041
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.2.0/Kommandr-x64.dmg
+    sha512: 7WWgY27mqgWRd0fOHYZt48M3VC0qR2ZmM+sUWymEqX07lPNrhzEzIR0zBIZoOz9HqWjEmDIfxNw3f+3prJ+M8g==
+    size: 216837698
+path: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.2.0/Kommandr-arm64.zip
+sha512: 4Z6jT31lsv/XWxPr41Xh8GOAZP4q+d2ItKAce0KqCcASx/up84zHylVPMLzxv+EnVzLTfEehkNhjJn4vVDMLFQ==
+releaseDate: 2026-09-03T17:41:19.172Z
 releaseNotes: >
   ### Highlights
 
-  - A new Docs tab: a file explorer for the project's `docs/` folder — folders,
-  drag to move, rename in place — with a seamless inline Markdown editor beside
-  it, so the assistant can read and write the same documents.
+  - Your phone now reaches your Mac at one permanent address. Pair once and stay
+  paired — through sleep, network changes, and restarts — with no QR code to
+  re-scan.
 
-  - AI inside your documents: Summarize, and Edit with AI for the whole document
-  or just the text you highlight — reviewed before anything is saved, with your
-  choice of provider and model — plus "chat about these documents" for any
-  selection of docs and folders.
+  - Remote access recovers on its own after your Mac sleeps, instead of quietly
+  staying down until you noticed and restarted it.
 
-  - Every chat is now kept: conversations get a title automatically, live in a
-  per-project Chats panel, and pick up where they left off — even after
-  restarting the app or opening them from your phone.
-
-  - The Markdown editor is now a real inline editor — you edit the formatted
-  text directly, like JIRA or Confluence — everywhere Kommandr edits Markdown.
-
-  - A Files drawer: browse the project folder, drag files in from Finder,
-  preview PDFs, images, spreadsheets and documents, and drag a file into a chat
-  to talk about it — and the phone gets the same Docs and Files screens, AI
-  included.
-
-  - Projects can now be "General" — for coursework, a business, writing,
-  research — which hides the developer tools, speaks plainly on the board
-  (goals, tasks, ideas, problems), and briefs the assistant as a helper that
-  works in your documents rather than a code repository.
+  - Long chat titles and pasted links no longer overflow their row on the phone.
 
 
   ### New Features
 
-  - Chats are permanent: each conversation is saved with its messages, titled
-  automatically after the first reply, and listed in the project's Chats panel
-  (the speech-bubble button in any chat's header) with search, pin, rename,
-  archive, and delete.
-
-  - Reopening a chat resumes it with its full context — the app rebuilds the
-  conversation on demand, so a chat from last week keeps working after a
-  restart.
-
-  - Search across chats finds conversations by title and by what was said in
-  them; copy a chat as Markdown or save it into the project's docs.
-
-  - The phone's Chats list shows the same titled conversations and opens the
-  exact chat you tap, not just the latest one on that surface.
-
-  - Docs tab on every project: a file explorer of the project's documents —
-  nested folders that collapse and remember it, a "New doc" that adds a row you
-  type the name into, folders from the "…" menu or a right-click, rename and
-  delete in place, drag documents and folders between folders — plus search,
-  inline editing with autosave, "Ask about this doc" to open a chat with the
-  document attached, and a "Save as doc" button on any assistant reply. The
-  phone gets a matching Docs screen with the same editor.
-
-  - Summarize and Edit with AI on every document: a quick synopsis you can copy
-  or insert under the heading, and rewrites from a preset ("Fix spelling &
-  grammar", "Make it concise", "Improve clarity", "Add structure") or your own
-  instruction — shown for review with Keep / Discard before anything is saved.
-  Pick the provider and model right in the bar (it starts on the provider's fast
-  model, like Claude Haiku, so answers come back in seconds); ⌘Enter or "Ask in
-  chat" turns what you typed into a question in a chat instead. Highlight any
-  text and an "Edit with AI" button appears over it — the rewrite then applies
-  to just that passage, formatting intact.
-
-  - Chat about several documents at once: ⌘-click, Shift-click, or the hover
-  checkbox to select documents and folders, then Chat or Summarize — a new chat
-  opens with every document attached (folders included). Those chats stay listed
-  under "Chats about docs" in the sidebar so you can pick one up later.
-
-  - The phone has the same Docs: the folder tree, new documents and folders,
-  rename, move and delete from each row's menu, a Select mode to chat about or
-  summarize several documents, the "Chats about docs" list, and the editor with
-  Summarize, Edit with AI (whole document or highlighted text, reviewed before
-  saving) and Ask in chat.
-
-  - Files on the phone: browse the project folder, add photos and documents from
-  your phone, preview images, PDFs, audio, video, spreadsheets, Markdown and
-  text, rename, delete, and hand any file to a chat.
-
-  - Project knowledge (what the assistant remembers about the project) is now
-  visible and editable from the Docs tab.
-
-  - Inline Markdown editing with headings, lists, task checkboxes, tables, links
-  and code blocks, plus a "Markdown" toggle for editing the raw text when you
-  need it — used for documents, issue descriptions, agent prompts, memory notes
-  and CLAUDE.md.
-
-  - Files drawer (the Files button in a project's header): folder browsing with
-  sizes and dates, drag files in from Finder or add them with a picker, previews
-  for images, PDFs, audio, video, CSV, Markdown and text, reveal in Finder,
-  rename, delete, and drag-a-file-into-chat to mention it.
-
-  - Choose a project's kind — Software or General — when adding it (Kommandr
-  suggests one from the folder's contents) or later in Project settings. General
-  projects open on their Docs tab, hide the dev server, code, terminal, git and
-  GitHub tools, and label the board in everyday words; the planner and the task
-  runner plan and produce documents instead of code.
-
-  - The workspace assistant's "create project" tool accepts the kind too, and
-  infers it from the folder when omitted.
+  - Your phone now connects to your Mac through one permanent address instead of
+  a temporary one that changed every time the connection restarted. Pair once
+  and it stays paired — through sleep, through moving between networks, through
+  restarting Kommandr — with no QR code to re-scan and nothing to install.
+  Requires the latest Kommandr app on your phone.
 
 
   ### Fixes
 
-  - Chat history no longer depends on the browser's local storage, which
-  Electron did not always save on quit — conversations are stored by the app
-  itself.
+  - Remote access no longer dies for good when your Mac sleeps at the wrong
+  moment. If the connection to your phone was being re-established at the
+  instant the Mac went to sleep, it was abandoned permanently — the phone showed
+  "can't reach your Mac" and re-scanning the QR code was the only way back, even
+  after the Mac woke up. It now keeps retrying on its own until it is back.
+
+  - Your phone stays paired through a sleeping Mac far more often: time the Mac
+  spends asleep no longer counts against the connection, so it is given a real
+  chance to recover on the same address instead of being replaced with a new one
+  — which is what forced a re-scan. A Mac that idles in and out of sleep could
+  previously go through several of these in an evening.
+
+  - On the phone, a chat whose title is a pasted link no longer runs past the
+  edge of its row, and a long opening message is trimmed to two lines instead of
+  stacking up the whole card — on both the Chats screen and a project's chat
+  list.
+
+  - A starred chat on the phone no longer spends an entire line on the star when
+  its title is one long unbroken word.
+
+  - The last paragraph of a document is no longer pinned against the bottom of
+  the editor — scrolling to the end of a long document now leaves room below it
+  again.
