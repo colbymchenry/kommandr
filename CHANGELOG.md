@@ -14,6 +14,29 @@ and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [Unreleased]
 
 
+## [0.4.0] - 2026-09-03
+
+### Highlights
+- You can see the browser your agents use, and take it over. A **Browser** button in the project header puts it on screen — sign in for the agent, watch it work, or click something yourself.
+- Agents ask before anything consequential in the browser: paying, deleting, sending or publishing, or confirming something that can't be undone.
+- Everything the browser does is recorded with a snapshot, so you can check afterwards exactly what an agent did in your accounts.
+- Browser logins are kept per client: sign into a tool once and every project has it, while one client's accounts stay separate from another's.
+- Screenshots from the in-app browser stopped failing and falling back to the slower browser — that had been happening dozens of times a day.
+- Full-page screenshots of sites that reveal sections as you scroll now come out complete, instead of blank below the first screen.
+- Claude Fable 5.1 and Claude Opus 4.8 are in the Claude model picker.
+
+### New Features
+- Claude Fable 5.1 and Claude Opus 4.8 are in the Claude model picker, next to Opus 5, Fable 5, Sonnet 5 and Haiku 4.5. Fable 5 stays available for anyone who wants to keep using it.
+- You can now see the browser the agent drives. A **Browser** button in the project header puts the in-app agent browser on screen so you can sign in for the agent, watch it work, or take over — anything you sign into there stays signed in for it, and the agent keeps driving the same window. The popover carries the address bar, back, forward and reload. Agents get the same door: when a page needs your login they show the window and ask you to sign in, instead of telling you to sign into the Live Edit preview.
+- Browser logins are kept per client. By default every project's agent browser shares one set of logins, so you sign into a tool once; a client can be given its own with the **Own browser logins** switch on its page, for accounts (Shopify, Google, Framer…) that are theirs rather than yours or another client's. The Live Edit preview uses the same profile as the agent browser, so signing in there signs the agent in too.
+- Full-page screenshots scroll through the page before capturing, so sites that reveal sections as you scroll (Framer, Webflow, lazily loaded images) come out complete instead of blank below the first screen — in the in-app browser and the standalone one alike.
+- Consequential browser actions ask you first. When an agent's click looks like a payment or purchase, a deletion or account change, sending or publishing something, or confirming a dialog that says it cannot be undone, the click pauses and a question appears in the chat (and on your phone): allow it, do it yourself in the agent browser, or deny. An agent can't slip past the check by scripting the click either: on a checkout page, a page with a card field, or under a warning dialog, that is refused too. The off switch is in Settings → General → AI browser.
+- Browser activity: every page the agent opens, every click, everything it types (secrets masked), every interacting script and window show/hide is recorded with a snapshot and the approval decision, so you can audit what it did in your accounts afterwards. Open it from the project header's Browser button; entries are kept for 30 days.
+
+### Fixes
+- Screenshots from the in-app agent browser no longer fail with "Preview bridge did not respond within 60s" and fall back to the standalone browser. Any capture over about a megabyte — a full-page capture, a photo-heavy page — was silently dropping the app's internal connection; captures now travel as files. This had been happening 10–30 times a day since the in-app browser shipped.
+- Console logs and network requests from the visible Live Edit preview (ghost mode) are captured again. The preview's color-scheme handling had been holding the only debugger slot, so the capture never attached.
+
 ## [0.3.0] - 2026-09-03
 
 ### Highlights
@@ -131,3 +154,4 @@ and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 [0.1.0]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.1.0
 [0.2.0]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.2.0
 [0.3.0]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.3.0
+[0.4.0]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.4.0

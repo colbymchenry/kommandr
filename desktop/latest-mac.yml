@@ -1,93 +1,96 @@
-version: 0.3.0
+version: 0.4.0
 files:
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.3.0/Kommandr-arm64.zip
-    sha512: Gfr9fkjOvXQ+QhZm18AFkqjHLenYpxFZTpz0IQ2J8PUKHQXZQ02KkRR7rNlqx2Y0x+GvCpvhC9jSgI7ld7bNQA==
-    size: 201565884
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.3.0/Kommandr-arm64.dmg
-    sha512: vdlwJ6L6S0PmvzpDQdaqlM6C0OUkYfJObkFFKzOSjvG1BfgLrGXqbN/M7epT4axSpSDa/5E+Vju796W+OlEIsQ==
-    size: 210307496
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.3.0/Kommandr-x64.zip
-    sha512: v7o4wLXeoJ4s2LUusdBtfR+2vTBCyIA6byuno+ITEO1xFyv+SKtB6lgz5gjscw83pjAmpg8++EfZaW54AbYi/g==
-    size: 208619768
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.3.0/Kommandr-x64.dmg
-    sha512: pIAQCAIBwDl1KCGcVK7LN61hwtvxg9qDYGq3z/NhDPxFuAdnL03yI3j2u74k1Pur9Pzo65FqTYQwzRgOwiGdBQ==
-    size: 216895010
-path: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.3.0/Kommandr-arm64.zip
-sha512: Gfr9fkjOvXQ+QhZm18AFkqjHLenYpxFZTpz0IQ2J8PUKHQXZQ02KkRR7rNlqx2Y0x+GvCpvhC9jSgI7ld7bNQA==
-releaseDate: 2026-09-03T19:28:03.482Z
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.4.0/Kommandr-arm64.zip
+    sha512: Z2brSwkMd5StguXqFKRMyN/WyHl4Dn+afP7ehSfhAQwikl7ZK9Ba6QiT/N1S+WoU0YpxmUY9Xpjcb1O6zbIRYw==
+    size: 201832260
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.4.0/Kommandr-arm64.dmg
+    sha512: /X2YnGM4UYWtU27tMR65+DWn31510+Baf0OWmqLzDbhjtPoICoiPsOsxgvanQZqLuP07E/K7wssmYUM3BmKmyw==
+    size: 210512197
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.4.0/Kommandr-x64.zip
+    sha512: ICTuruGbStxmTsmcLZE3CYJzFvcpAeQDGj3TDzmnDUyLYM8gwfnqU7qfe6A5olbji9D0ZNwXCNLY4g9tcWBksw==
+    size: 208886004
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.4.0/Kommandr-x64.dmg
+    sha512: pv2kWW6BFEaChYB9uUOI6rpavBvNTHkWyQ3ryU+PG9h6YGo2esyGx+vA3V0W/V7LYIctoDYiUidaUU9QgxD7aA==
+    size: 217088712
+path: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.4.0/Kommandr-arm64.zip
+sha512: Z2brSwkMd5StguXqFKRMyN/WyHl4Dn+afP7ehSfhAQwikl7ZK9Ba6QiT/N1S+WoU0YpxmUY9Xpjcb1O6zbIRYw==
+releaseDate: 2026-09-03T22:36:07.382Z
 releaseNotes: >
   ### Highlights
 
-  - Creating a new project is one page again — pick what you're building, the
-  framework **and its version**, where it goes, and which tracker its issues
-  live in (local, JIRA, Neon…), then Create. New projects come out ready to use
-  instead of asking to be initialized.
+  - You can see the browser your agents use, and take it over. A **Browser**
+  button in the project header puts it on screen — sign in for the agent, watch
+  it work, or click something yourself.
 
-  - The Planner and the General chat can browse the web in a brand-new project,
-  before any dev server is set up — so "go look at this site and rebuild it
-  here" works, screenshots and all.
+  - Agents ask before anything consequential in the browser: paying, deleting,
+  sending or publishing, or confirming something that can't be undone.
+
+  - Everything the browser does is recorded with a snapshot, so you can check
+  afterwards exactly what an agent did in your accounts.
+
+  - Browser logins are kept per client: sign into a tool once and every project
+  has it, while one client's accounts stay separate from another's.
+
+  - Screenshots from the in-app browser stopped failing and falling back to the
+  slower browser — that had been happening dozens of times a day.
+
+  - Full-page screenshots of sites that reveal sections as you scroll now come
+  out complete, instead of blank below the first screen.
+
+  - Claude Fable 5.1 and Claude Opus 4.8 are in the Claude model picker.
 
 
   ### New Features
 
-  - Create New is a single page instead of a three-step wizard: what you're
-  building, the framework, its version, a few framework options, name and
-  folder, issue key, storage backend, client, and a note for the agent — with a
-  one-line summary of exactly what will be created above the Create button.
+  - Claude Fable 5.1 and Claude Opus 4.8 are in the Claude model picker, next to
+  Opus 5, Fable 5, Sonnet 5 and Haiku 4.5. Fable 5 stays available for anyone
+  who wants to keep using it.
 
-  - Pick the framework when creating a project. Websites offer Astro, Eleventy
-  or plain Vite; web apps Next.js, SvelteKit, Nuxt or React Router; mobile apps
-  Expo or the React Native CLI; API backends Hono, Express, Fastify or NestJS;
-  Shopify themes Skeleton or Dawn. Astro was previously forced on every website.
+  - You can now see the browser the agent drives. A **Browser** button in the
+  project header puts the in-app agent browser on screen so you can sign in for
+  the agent, watch it work, or take over — anything you sign into there stays
+  signed in for it, and the agent keeps driving the same window. The popover
+  carries the address bar, back, forward and reload. Agents get the same door:
+  when a page needs your login they show the window and ask you to sign in,
+  instead of telling you to sign into the Live Edit preview.
 
-  - Pick the framework version from a dropdown listing its release lines from
-  the npm registry — 7.x, 6.x, 5.x, Expo's SDK 57, SDK 56…, and pre-release tags
-  — with the latest release preselected. The agent pins the version you choose.
+  - Browser logins are kept per client. By default every project's agent browser
+  shares one set of logins, so you sign into a tool once; a client can be given
+  its own with the **Own browser logins** switch on its page, for accounts
+  (Shopify, Google, Framer…) that are theirs rather than yours or another
+  client's. The Live Edit preview uses the same profile as the agent browser, so
+  signing in there signs the agent in too.
 
-  - Choose the storage backend (local SQLite, JIRA, PostgreSQL/Neon…) and the
-  client for a new project right in the Create New form, the same choices the
-  Add Existing and Clone tabs already offered.
+  - Full-page screenshots scroll through the page before capturing, so sites
+  that reveal sections as you scroll (Framer, Webflow, lazily loaded images)
+  come out complete instead of blank below the first screen — in the in-app
+  browser and the standalone one alike.
 
-  - Create a General project (documents, files and tasks — no code) from the
-  same form: an empty folder with a docs/ directory, ready in a second, no agent
-  involved.
+  - Consequential browser actions ask you first. When an agent's click looks
+  like a payment or purchase, a deletion or account change, sending or
+  publishing something, or confirming a dialog that says it cannot be undone,
+  the click pauses and a question appears in the chat (and on your phone): allow
+  it, do it yourself in the agent browser, or deny. An agent can't slip past the
+  check by scripting the click either: on a checkout page, a page with a card
+  field, or under a warning dialog, that is refused too. The off switch is in
+  Settings → General → AI browser.
 
-  - The Create New form remembers the parent folder you used last time (falling
-  back to the folder your most recent project lives in), and lets you pick which
-  AI provider and model scaffolds the project.
-
-  - If scaffolding fails after the folder was created, the error screen offers
-  to register the folder as it is instead of starting over.
-
-  - The AI browser can save its screenshots into the project (`saveAs` on the
-  screenshot tool), so a Planner asked to study a site can keep full-page and
-  per-section captures under the repo and point each task at exact reference
-  images instead of describing them.
+  - Browser activity: every page the agent opens, every click, everything it
+  types (secrets masked), every interacting script and window show/hide is
+  recorded with a snapshot and the approval decision, so you can audit what it
+  did in your accounts afterwards. Open it from the project header's Browser
+  button; entries are kept for 30 days.
 
 
   ### Fixes
 
-  - The Planner and the General chat can use the browser in a project that has
-  no dev server set up yet — a fresh project whose reference site lives
-  elsewhere, for example. The browser tools only loaded once a dev server was
-  configured, so asking the Planner to screenshot a site got "I can't browse the
-  web from this planning session" back. The Planner is also told how to use the
-  browser now; before, even in a project with a dev server, nothing in its
-  briefing mentioned it.
+  - Screenshots from the in-app agent browser no longer fail with "Preview
+  bridge did not respond within 60s" and fall back to the standalone browser.
+  Any capture over about a megabyte — a full-page capture, a photo-heavy page —
+  was silently dropping the app's internal connection; captures now travel as
+  files. This had been happening 10–30 times a day since the in-app browser
+  shipped.
 
-  - A chat no longer stays stuck on "Writing…" with the composer reading "Claude
-  Code is responding…" after a reply that asked you two or more questions along
-  the way — the response had finished, but the chat only unlocked after pressing
-  Stop.
-
-  - A project created from the Create New tab no longer lands on "This project
-  hasn't been initialized yet": Kommandr now sets up the issue store (and the
-  storage backend you chose) before registering the project, so the board works
-  the moment the scaffold finishes.
-
-  - The Create New tab's framework options are decided by Kommandr instead of
-  being generated by a model on every visit — the form appears instantly, and
-  the same framework always offers the same options.
-
-  - Scaffolding a project with a non-Claude default provider no longer asks it
-  for a model it doesn't have.
+  - Console logs and network requests from the visible Live Edit preview (ghost
+  mode) are captured again. The preview's color-scheme handling had been holding
+  the only debugger slot, so the capture never attached.
