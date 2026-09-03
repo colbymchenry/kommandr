@@ -1,64 +1,93 @@
-version: 0.2.0
+version: 0.3.0
 files:
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.2.0/Kommandr-arm64.zip
-    sha512: 4Z6jT31lsv/XWxPr41Xh8GOAZP4q+d2ItKAce0KqCcASx/up84zHylVPMLzxv+EnVzLTfEehkNhjJn4vVDMLFQ==
-    size: 201544108
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.2.0/Kommandr-arm64.dmg
-    sha512: IpT3lXQrXT+dzs1AzLitFv1lbApytaVIlD86oi8ImdHifICCKj+n3mE1xXZy0XZy+ElvvIyUYclnER43Baz5/w==
-    size: 210314259
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.2.0/Kommandr-x64.zip
-    sha512: c6TzeQ/BWXl4Od8wSxsup9tqYsPWBKoQgkS67XRQ8ZjBbjFq6LnLl2OXu2T3BGO1+VjxL/nSsPFpWzNE3cn1xw==
-    size: 208598041
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.2.0/Kommandr-x64.dmg
-    sha512: 7WWgY27mqgWRd0fOHYZt48M3VC0qR2ZmM+sUWymEqX07lPNrhzEzIR0zBIZoOz9HqWjEmDIfxNw3f+3prJ+M8g==
-    size: 216837698
-path: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.2.0/Kommandr-arm64.zip
-sha512: 4Z6jT31lsv/XWxPr41Xh8GOAZP4q+d2ItKAce0KqCcASx/up84zHylVPMLzxv+EnVzLTfEehkNhjJn4vVDMLFQ==
-releaseDate: 2026-09-03T17:41:19.172Z
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.3.0/Kommandr-arm64.zip
+    sha512: Gfr9fkjOvXQ+QhZm18AFkqjHLenYpxFZTpz0IQ2J8PUKHQXZQ02KkRR7rNlqx2Y0x+GvCpvhC9jSgI7ld7bNQA==
+    size: 201565884
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.3.0/Kommandr-arm64.dmg
+    sha512: vdlwJ6L6S0PmvzpDQdaqlM6C0OUkYfJObkFFKzOSjvG1BfgLrGXqbN/M7epT4axSpSDa/5E+Vju796W+OlEIsQ==
+    size: 210307496
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.3.0/Kommandr-x64.zip
+    sha512: v7o4wLXeoJ4s2LUusdBtfR+2vTBCyIA6byuno+ITEO1xFyv+SKtB6lgz5gjscw83pjAmpg8++EfZaW54AbYi/g==
+    size: 208619768
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.3.0/Kommandr-x64.dmg
+    sha512: pIAQCAIBwDl1KCGcVK7LN61hwtvxg9qDYGq3z/NhDPxFuAdnL03yI3j2u74k1Pur9Pzo65FqTYQwzRgOwiGdBQ==
+    size: 216895010
+path: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.3.0/Kommandr-arm64.zip
+sha512: Gfr9fkjOvXQ+QhZm18AFkqjHLenYpxFZTpz0IQ2J8PUKHQXZQ02KkRR7rNlqx2Y0x+GvCpvhC9jSgI7ld7bNQA==
+releaseDate: 2026-09-03T19:28:03.482Z
 releaseNotes: >
   ### Highlights
 
-  - Your phone now reaches your Mac at one permanent address. Pair once and stay
-  paired — through sleep, network changes, and restarts — with no QR code to
-  re-scan.
+  - Creating a new project is one page again — pick what you're building, the
+  framework **and its version**, where it goes, and which tracker its issues
+  live in (local, JIRA, Neon…), then Create. New projects come out ready to use
+  instead of asking to be initialized.
 
-  - Remote access recovers on its own after your Mac sleeps, instead of quietly
-  staying down until you noticed and restarted it.
-
-  - Long chat titles and pasted links no longer overflow their row on the phone.
+  - The Planner and the General chat can browse the web in a brand-new project,
+  before any dev server is set up — so "go look at this site and rebuild it
+  here" works, screenshots and all.
 
 
   ### New Features
 
-  - Your phone now connects to your Mac through one permanent address instead of
-  a temporary one that changed every time the connection restarted. Pair once
-  and it stays paired — through sleep, through moving between networks, through
-  restarting Kommandr — with no QR code to re-scan and nothing to install.
-  Requires the latest Kommandr app on your phone.
+  - Create New is a single page instead of a three-step wizard: what you're
+  building, the framework, its version, a few framework options, name and
+  folder, issue key, storage backend, client, and a note for the agent — with a
+  one-line summary of exactly what will be created above the Create button.
+
+  - Pick the framework when creating a project. Websites offer Astro, Eleventy
+  or plain Vite; web apps Next.js, SvelteKit, Nuxt or React Router; mobile apps
+  Expo or the React Native CLI; API backends Hono, Express, Fastify or NestJS;
+  Shopify themes Skeleton or Dawn. Astro was previously forced on every website.
+
+  - Pick the framework version from a dropdown listing its release lines from
+  the npm registry — 7.x, 6.x, 5.x, Expo's SDK 57, SDK 56…, and pre-release tags
+  — with the latest release preselected. The agent pins the version you choose.
+
+  - Choose the storage backend (local SQLite, JIRA, PostgreSQL/Neon…) and the
+  client for a new project right in the Create New form, the same choices the
+  Add Existing and Clone tabs already offered.
+
+  - Create a General project (documents, files and tasks — no code) from the
+  same form: an empty folder with a docs/ directory, ready in a second, no agent
+  involved.
+
+  - The Create New form remembers the parent folder you used last time (falling
+  back to the folder your most recent project lives in), and lets you pick which
+  AI provider and model scaffolds the project.
+
+  - If scaffolding fails after the folder was created, the error screen offers
+  to register the folder as it is instead of starting over.
+
+  - The AI browser can save its screenshots into the project (`saveAs` on the
+  screenshot tool), so a Planner asked to study a site can keep full-page and
+  per-section captures under the repo and point each task at exact reference
+  images instead of describing them.
 
 
   ### Fixes
 
-  - Remote access no longer dies for good when your Mac sleeps at the wrong
-  moment. If the connection to your phone was being re-established at the
-  instant the Mac went to sleep, it was abandoned permanently — the phone showed
-  "can't reach your Mac" and re-scanning the QR code was the only way back, even
-  after the Mac woke up. It now keeps retrying on its own until it is back.
+  - The Planner and the General chat can use the browser in a project that has
+  no dev server set up yet — a fresh project whose reference site lives
+  elsewhere, for example. The browser tools only loaded once a dev server was
+  configured, so asking the Planner to screenshot a site got "I can't browse the
+  web from this planning session" back. The Planner is also told how to use the
+  browser now; before, even in a project with a dev server, nothing in its
+  briefing mentioned it.
 
-  - Your phone stays paired through a sleeping Mac far more often: time the Mac
-  spends asleep no longer counts against the connection, so it is given a real
-  chance to recover on the same address instead of being replaced with a new one
-  — which is what forced a re-scan. A Mac that idles in and out of sleep could
-  previously go through several of these in an evening.
+  - A chat no longer stays stuck on "Writing…" with the composer reading "Claude
+  Code is responding…" after a reply that asked you two or more questions along
+  the way — the response had finished, but the chat only unlocked after pressing
+  Stop.
 
-  - On the phone, a chat whose title is a pasted link no longer runs past the
-  edge of its row, and a long opening message is trimmed to two lines instead of
-  stacking up the whole card — on both the Chats screen and a project's chat
-  list.
+  - A project created from the Create New tab no longer lands on "This project
+  hasn't been initialized yet": Kommandr now sets up the issue store (and the
+  storage backend you chose) before registering the project, so the board works
+  the moment the scaffold finishes.
 
-  - A starred chat on the phone no longer spends an entire line on the star when
-  its title is one long unbroken word.
+  - The Create New tab's framework options are decided by Kommandr instead of
+  being generated by a model on every visit — the form appears instantly, and
+  the same framework always offers the same options.
 
-  - The last paragraph of a document is no longer pinned against the bottom of
-  the editor — scrolling to the end of a long document now leaves room below it
-  again.
+  - Scaffolding a project with a non-Claude default provider no longer asks it
+  for a model it doesn't have.
