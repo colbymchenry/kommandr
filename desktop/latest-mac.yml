@@ -1,96 +1,66 @@
-version: 0.4.0
+version: 0.5.0
 files:
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.4.0/Kommandr-arm64.zip
-    sha512: Z2brSwkMd5StguXqFKRMyN/WyHl4Dn+afP7ehSfhAQwikl7ZK9Ba6QiT/N1S+WoU0YpxmUY9Xpjcb1O6zbIRYw==
-    size: 201832260
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.4.0/Kommandr-arm64.dmg
-    sha512: /X2YnGM4UYWtU27tMR65+DWn31510+Baf0OWmqLzDbhjtPoICoiPsOsxgvanQZqLuP07E/K7wssmYUM3BmKmyw==
-    size: 210512197
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.4.0/Kommandr-x64.zip
-    sha512: ICTuruGbStxmTsmcLZE3CYJzFvcpAeQDGj3TDzmnDUyLYM8gwfnqU7qfe6A5olbji9D0ZNwXCNLY4g9tcWBksw==
-    size: 208886004
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.4.0/Kommandr-x64.dmg
-    sha512: pv2kWW6BFEaChYB9uUOI6rpavBvNTHkWyQ3ryU+PG9h6YGo2esyGx+vA3V0W/V7LYIctoDYiUidaUU9QgxD7aA==
-    size: 217088712
-path: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.4.0/Kommandr-arm64.zip
-sha512: Z2brSwkMd5StguXqFKRMyN/WyHl4Dn+afP7ehSfhAQwikl7ZK9Ba6QiT/N1S+WoU0YpxmUY9Xpjcb1O6zbIRYw==
-releaseDate: 2026-09-03T22:36:07.382Z
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.5.0/Kommandr-arm64.zip
+    sha512: iWECUqXwulbyL1EePJT7n/a8DDDy3AR/y2/0OAUim62X6RuHEWHxongar7seVV9maxRs0NuV24W8OuXH1pga0w==
+    size: 201851871
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.5.0/Kommandr-arm64.dmg
+    sha512: sFyDhsnHPRoopGDx1vd2y69dwLqE5tMa+GT1VQy2v1fmC9ByILch9tsXnsLRwwxZZRbnPmD+Jea0XhRoS0EU7g==
+    size: 210555482
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.5.0/Kommandr-x64.zip
+    sha512: MarIcRNLMlLKeWUUDap/3SbzZ4ox6JCJA1i7+JU4unxfTf67vQe0pl+xojGnAq/21rD03Fj7a1YPgKtbuhbcVQ==
+    size: 208905329
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.5.0/Kommandr-x64.dmg
+    sha512: ytE1RYQsCUNk51RxwQksZasulealXyB8F3a5gDJgBT5iXGEqq0HljINnkvO2XDSLnmjAwbawP4lzbYQ1E/LT9A==
+    size: 217123102
+path: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.5.0/Kommandr-arm64.zip
+sha512: iWECUqXwulbyL1EePJT7n/a8DDDy3AR/y2/0OAUim62X6RuHEWHxongar7seVV9maxRs0NuV24W8OuXH1pga0w==
+releaseDate: 2026-09-04T18:50:46.795Z
 releaseNotes: >
   ### Highlights
 
-  - You can see the browser your agents use, and take it over. A **Browser**
-  button in the project header puts it on screen — sign in for the agent, watch
-  it work, or click something yourself.
+  - Press Stop right after sending and your message comes back to the message
+  box exactly as you typed it, so you can reword instead of retyping.
 
-  - Agents ask before anything consequential in the browser: paying, deleting,
-  sending or publishing, or confirming something that can't be undone.
+  - In Live Edit, the AI works in the preview you are looking at — you watch it
+  click through your app instead of it browsing in a window you cannot see.
 
-  - Everything the browser does is recorded with a snapshot, so you can check
-  afterwards exactly what an agent did in your accounts.
+  - Question panels take a note on any choice you pick, for when the right
+  answer is "this one, but…".
 
-  - Browser logins are kept per client: sign into a tool once and every project
-  has it, while one client's accounts stay separate from another's.
+  - Stopping just after you answer a question panel brings the questions back
+  with your choices still selected.
 
-  - Screenshots from the in-app browser stopped failing and falling back to the
-  slower browser — that had been happening dozens of times a day.
-
-  - Full-page screenshots of sites that reveal sections as you scroll now come
-  out complete, instead of blank below the first screen.
-
-  - Claude Fable 5.1 and Claude Opus 4.8 are in the Claude model picker.
+  - Configure Dev Server is back to a command and a port — setting up a test
+  user for the AI's browser is no longer a thing.
 
 
   ### New Features
 
-  - Claude Fable 5.1 and Claude Opus 4.8 are in the Claude model picker, next to
-  Opus 5, Fable 5, Sonnet 5 and Haiku 4.5. Fable 5 stays available for anyone
-  who wants to keep using it.
+  - Pressing Stop before the AI has started answering now takes your message
+  back out of the chat and returns it to the message box, exactly as you typed
+  it — mentions, pasted blocks and attachments included — so you can refine the
+  prompt instead of retyping it. Once a reply has started, Stop works the way it
+  always has and the message stays. If you were typing a follow-up while you
+  waited, it is kept below the message that came back, and a message you pull
+  back on one device disappears on the other too.
 
-  - You can now see the browser the agent drives. A **Browser** button in the
-  project header puts the in-app agent browser on screen so you can sign in for
-  the agent, watch it work, or take over — anything you sign into there stays
-  signed in for it, and the agent keeps driving the same window. The popover
-  carries the address bar, back, forward and reload. Agents get the same door:
-  when a page needs your login they show the window and ask you to sign in,
-  instead of telling you to sign into the Live Edit preview.
+  - You can add a note to any choice in a question panel — "Add a note" puts a
+  line under each option you picked, and it reaches the agent alongside that
+  choice. Handy when the right answer is "this one, but…".
 
-  - Browser logins are kept per client. By default every project's agent browser
-  shares one set of logins, so you sign into a tool once; a client can be given
-  its own with the **Own browser logins** switch on its page, for accounts
-  (Shopify, Google, Framer…) that are theirs rather than yours or another
-  client's. The Live Edit preview uses the same profile as the agent browser, so
-  signing in there signs the agent in too.
+  - Stopping right after you answer a question panel brings the questions back
+  with your choices still selected, so you can change a wrong pick and send
+  again instead of re-answering from scratch.
 
-  - Full-page screenshots scroll through the page before capturing, so sites
-  that reveal sections as you scroll (Framer, Webflow, lazily loaded images)
-  come out complete instead of blank below the first screen — in the in-app
-  browser and the standalone one alike.
+  - In Live Edit, the AI now works in the preview you're looking at. When it
+  opens a page, clicks through a flow or checks the console, it happens in the
+  preview pane beside the chat (each click shows a purple ripple) instead of in
+  a hidden window, so you can watch and step in. With the preview closed it uses
+  the in-app agent browser as before.
 
-  - Consequential browser actions ask you first. When an agent's click looks
-  like a payment or purchase, a deletion or account change, sending or
-  publishing something, or confirming a dialog that says it cannot be undone,
-  the click pauses and a question appears in the chat (and on your phone): allow
-  it, do it yourself in the agent browser, or deny. An agent can't slip past the
-  check by scripting the click either: on a checkout page, a page with a card
-  field, or under a warning dialog, that is refused too. The off switch is in
-  Settings → General → AI browser.
-
-  - Browser activity: every page the agent opens, every click, everything it
-  types (secrets masked), every interacting script and window show/hide is
-  recorded with a snapshot and the approval decision, so you can audit what it
-  did in your accounts afterwards. Open it from the project header's Browser
-  button; entries are kept for 30 days.
-
-
-  ### Fixes
-
-  - Screenshots from the in-app agent browser no longer fail with "Preview
-  bridge did not respond within 60s" and fall back to the standalone browser.
-  Any capture over about a megabyte — a full-page capture, a photo-heavy page —
-  was silently dropping the app's internal connection; captures now travel as
-  files. This had been happening 10–30 times a day since the in-app browser
-  shipped.
-
-  - Console logs and network requests from the visible Live Edit preview (ghost
-  mode) are captured again. The preview's color-scheme handling had been holding
-  the only debugger slot, so the capture never attached.
+  - Configure Dev Server is back to command and port. The "AI browser access"
+  section is gone: agents browse your running app in the in-app browser with
+  your own login, for any sign-in provider, so there is no Clerk test user to
+  set up. If you had entered one there, put it in the project's .env as
+  CLERK_TEST_EMAIL / CLERK_TEST_PASSWORD and the standalone browser still signs
+  in with it.

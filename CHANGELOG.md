@@ -14,6 +14,22 @@ and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [Unreleased]
 
 
+## [0.5.0] - 2026-09-04
+
+### Highlights
+- Press Stop right after sending and your message comes back to the message box exactly as you typed it, so you can reword instead of retyping.
+- In Live Edit, the AI works in the preview you are looking at — you watch it click through your app instead of it browsing in a window you cannot see.
+- Question panels take a note on any choice you pick, for when the right answer is "this one, but…".
+- Stopping just after you answer a question panel brings the questions back with your choices still selected.
+- Configure Dev Server is back to a command and a port — setting up a test user for the AI's browser is no longer a thing.
+
+### New Features
+- Pressing Stop before the AI has started answering now takes your message back out of the chat and returns it to the message box, exactly as you typed it — mentions, pasted blocks and attachments included — so you can refine the prompt instead of retyping it. Once a reply has started, Stop works the way it always has and the message stays. If you were typing a follow-up while you waited, it is kept below the message that came back, and a message you pull back on one device disappears on the other too.
+- You can add a note to any choice in a question panel — "Add a note" puts a line under each option you picked, and it reaches the agent alongside that choice. Handy when the right answer is "this one, but…".
+- Stopping right after you answer a question panel brings the questions back with your choices still selected, so you can change a wrong pick and send again instead of re-answering from scratch.
+- In Live Edit, the AI now works in the preview you're looking at. When it opens a page, clicks through a flow or checks the console, it happens in the preview pane beside the chat (each click shows a purple ripple) instead of in a hidden window, so you can watch and step in. With the preview closed it uses the in-app agent browser as before.
+- Configure Dev Server is back to command and port. The "AI browser access" section is gone: agents browse your running app in the in-app browser with your own login, for any sign-in provider, so there is no Clerk test user to set up. If you had entered one there, put it in the project's .env as CLERK_TEST_EMAIL / CLERK_TEST_PASSWORD and the standalone browser still signs in with it.
+
 ## [0.4.0] - 2026-09-03
 
 ### Highlights
@@ -155,3 +171,4 @@ and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 [0.2.0]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.2.0
 [0.3.0]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.3.0
 [0.4.0]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.4.0
+[0.5.0]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.5.0
