@@ -1,66 +1,34 @@
-version: 0.5.0
+version: 0.5.1
 files:
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.5.0/Kommandr-arm64.zip
-    sha512: iWECUqXwulbyL1EePJT7n/a8DDDy3AR/y2/0OAUim62X6RuHEWHxongar7seVV9maxRs0NuV24W8OuXH1pga0w==
-    size: 201851871
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.5.0/Kommandr-arm64.dmg
-    sha512: sFyDhsnHPRoopGDx1vd2y69dwLqE5tMa+GT1VQy2v1fmC9ByILch9tsXnsLRwwxZZRbnPmD+Jea0XhRoS0EU7g==
-    size: 210555482
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.5.0/Kommandr-x64.zip
-    sha512: MarIcRNLMlLKeWUUDap/3SbzZ4ox6JCJA1i7+JU4unxfTf67vQe0pl+xojGnAq/21rD03Fj7a1YPgKtbuhbcVQ==
-    size: 208905329
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.5.0/Kommandr-x64.dmg
-    sha512: ytE1RYQsCUNk51RxwQksZasulealXyB8F3a5gDJgBT5iXGEqq0HljINnkvO2XDSLnmjAwbawP4lzbYQ1E/LT9A==
-    size: 217123102
-path: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.5.0/Kommandr-arm64.zip
-sha512: iWECUqXwulbyL1EePJT7n/a8DDDy3AR/y2/0OAUim62X6RuHEWHxongar7seVV9maxRs0NuV24W8OuXH1pga0w==
-releaseDate: 2026-09-04T18:50:46.795Z
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.5.1/Kommandr-arm64.zip
+    sha512: 8+yHoR30wOempX+gWK3zMzKWfed1goOUjvvwnEjJj0xqleoy2EW6YZ0Xj4FHTbXf4zMd5lpnUwA5Jou1/4DSTA==
+    size: 201852215
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.5.1/Kommandr-arm64.dmg
+    sha512: JieH1vXac5JGB8rPDZrXnN9ZnmIi5L3KFareg2brTSxqD26Omiy+PJWePpRLN7KCUBsv31GwyQyES/BvdBAdlQ==
+    size: 210596077
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.5.1/Kommandr-x64.zip
+    sha512: JL1xCnlO93sLdHTadnZMZ6nH4n+p/UUg9lcqZHVQ2cDV7qC2Ziya6dviFq46+/zFt0fbO8RNVNQX7YWpzZTe9g==
+    size: 208905521
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.5.1/Kommandr-x64.dmg
+    sha512: yBnQj5FbpzJtuoAySZviYV0fWrhIR3kevU8fBjrI2luZ58uSTj/daO+isgdXr8Sxpj6XWdADpKF29xjvo6XF/Q==
+    size: 217093826
+path: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.5.1/Kommandr-arm64.zip
+sha512: 8+yHoR30wOempX+gWK3zMzKWfed1goOUjvvwnEjJj0xqleoy2EW6YZ0Xj4FHTbXf4zMd5lpnUwA5Jou1/4DSTA==
+releaseDate: 2026-09-04T20:48:50.765Z
 releaseNotes: >
   ### Highlights
 
-  - Press Stop right after sending and your message comes back to the message
-  box exactly as you typed it, so you can reword instead of retyping.
-
-  - In Live Edit, the AI works in the preview you are looking at — you watch it
-  click through your app instead of it browsing in a window you cannot see.
-
-  - Question panels take a note on any choice you pick, for when the right
-  answer is "this one, but…".
-
-  - Stopping just after you answer a question panel brings the questions back
-  with your choices still selected.
-
-  - Configure Dev Server is back to a command and a port — setting up a test
-  user for the AI's browser is no longer a thing.
+  - Fixed the phone getting stuck on a plain, unstyled "Loading projects…"
+  screen — remote access could end up fighting itself and drop every request
+  after the first.
 
 
-  ### New Features
+  ### Fixes
 
-  - Pressing Stop before the AI has started answering now takes your message
-  back out of the chat and returns it to the message box, exactly as you typed
-  it — mentions, pasted blocks and attachments included — so you can refine the
-  prompt instead of retyping it. Once a reply has started, Stop works the way it
-  always has and the message stays. If you were typing a follow-up while you
-  waited, it is kept below the message that came back, and a message you pull
-  back on one device disappears on the other too.
-
-  - You can add a note to any choice in a question panel — "Add a note" puts a
-  line under each option you picked, and it reaches the agent alongside that
-  choice. Handy when the right answer is "this one, but…".
-
-  - Stopping right after you answer a question panel brings the questions back
-  with your choices still selected, so you can change a wrong pick and send
-  again instead of re-answering from scratch.
-
-  - In Live Edit, the AI now works in the preview you're looking at. When it
-  opens a page, clicks through a flow or checks the console, it happens in the
-  preview pane beside the chat (each click shows a purple ripple) instead of in
-  a hidden window, so you can watch and step in. With the preview closed it uses
-  the in-app agent browser as before.
-
-  - Configure Dev Server is back to command and port. The "AI browser access"
-  section is gone: agents browse your running app in the in-app browser with
-  your own login, for any sign-in provider, so there is no Clerk test user to
-  set up. If you had entered one there, put it in the project's .env as
-  CLERK_TEST_EMAIL / CLERK_TEST_PASSWORD and the standalone browser still signs
-  in with it.
+  - Fixed the phone loading a plain, unstyled page stuck on "Loading projects…".
+  Restarting remote access could leave the Mac holding two connections at once;
+  because only the newest counts, the two knocked each other offline about twice
+  a second and nothing after the first page request got through — and it stayed
+  that way until the app was restarted. Remote access now keeps a single
+  connection, and restarting it replaces that connection cleanly instead of
+  leaving the old one fighting the new one.

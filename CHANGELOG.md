@@ -14,6 +14,14 @@ and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [Unreleased]
 
 
+## [0.5.1] - 2026-09-04
+
+### Highlights
+- Fixed the phone getting stuck on a plain, unstyled "Loading projects…" screen — remote access could end up fighting itself and drop every request after the first.
+
+### Fixes
+- Fixed the phone loading a plain, unstyled page stuck on "Loading projects…". Restarting remote access could leave the Mac holding two connections at once; because only the newest counts, the two knocked each other offline about twice a second and nothing after the first page request got through — and it stayed that way until the app was restarted. Remote access now keeps a single connection, and restarting it replaces that connection cleanly instead of leaving the old one fighting the new one.
+
 ## [0.5.0] - 2026-09-04
 
 ### Highlights
@@ -172,3 +180,4 @@ and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 [0.3.0]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.3.0
 [0.4.0]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.4.0
 [0.5.0]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.5.0
+[0.5.1]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.5.1
