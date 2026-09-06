@@ -14,6 +14,14 @@ and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [Unreleased]
 
 
+## [0.6.1] - 2026-09-06
+
+### Highlights
+- Settings no longer reloads itself in a loop after opening: the provider spinner and the GitHub CLI check settle, and tabs stop flickering.
+
+### Fixes
+- Settings no longer reloads everything on the page in a loop after opening. In 0.6.0 the "Verifying installed providers and sign-ins…" spinner never went away, the GitHub CLI section stayed on "Detecting…", tabs flickered as every setting reloaded several times a second, and the app kept re-running provider and GitHub checks in the background for as long as the page was open.
+
 ## [0.6.0] - 2026-09-06
 
 ### Highlights
@@ -199,3 +207,4 @@ and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 [0.5.0]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.5.0
 [0.5.1]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.5.1
 [0.6.0]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.6.0
+[0.6.1]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.6.1
