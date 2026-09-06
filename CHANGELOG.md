@@ -14,6 +14,23 @@ and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [Unreleased]
 
 
+## [0.6.0] - 2026-09-06
+
+### Highlights
+- GPT-6 Astra is in the Codex model picker, with GPT-5.5 and GPT-5.3 Codex Spark; the models OpenAI has retired are gone.
+- Codex effort levels now read Light, Medium, High and Extra High, plus Ultra on GPT-6 Astra, GPT-5.6 Sol and GPT-5.6 Terra.
+- Settings → AI Providers opens on what it last knew and shows a spinner while it re-checks, instead of "Not detected" on every provider for several seconds.
+- Detecting AI providers is several times faster and no longer freezes the app while it runs.
+
+### New Features
+- OpenAI's new GPT-6 Astra is in the Codex model picker, alongside GPT-5.5 and GPT-5.3 Codex Spark, so the list matches OpenAI's current lineup. GPT-5.4, GPT-5.3 Codex and GPT-5.2, which OpenAI has retired, are gone from the picker.
+- Codex effort levels now read as they do in the Codex app — Light, Medium, High, Extra High — with a new Ultra level on GPT-6 Astra, GPT-5.6 Sol and GPT-5.6 Terra. Switching to a model that doesn't offer Ultra steps the effort down to Extra High instead of leaving a level the model can't run.
+
+### Fixes
+- Settings → AI Providers no longer shows every provider as "Not detected" for several seconds after opening. The page now shows what it last knew right away, with a spinner in the section heading while it verifies which CLIs are installed and signed in, and a provider it has no record of yet reads "Checking…" instead of a false "Not detected".
+- Detecting AI providers is several times faster and no longer freezes the rest of the app while it runs. The seven CLIs are now checked at the same time instead of one after another, and a Kommandr-installed CLI reports its version from disk instead of being launched to ask — which took over a second per provider right after an update. Each scan also writes one timing line to the settings log, so a slow one can be diagnosed.
+- Settings could keep showing an old version number for a provider after it had updated (Gemini CLI read 0.50.0 with 0.58.0 installed). The version now comes from the installed package itself.
+
 ## [0.5.1] - 2026-09-04
 
 ### Highlights
@@ -181,3 +198,4 @@ and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 [0.4.0]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.4.0
 [0.5.0]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.5.0
 [0.5.1]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.5.1
+[0.6.0]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.6.0

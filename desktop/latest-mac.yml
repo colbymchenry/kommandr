@@ -1,34 +1,63 @@
-version: 0.5.1
+version: 0.6.0
 files:
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.5.1/Kommandr-arm64.zip
-    sha512: 8+yHoR30wOempX+gWK3zMzKWfed1goOUjvvwnEjJj0xqleoy2EW6YZ0Xj4FHTbXf4zMd5lpnUwA5Jou1/4DSTA==
-    size: 201852215
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.5.1/Kommandr-arm64.dmg
-    sha512: JieH1vXac5JGB8rPDZrXnN9ZnmIi5L3KFareg2brTSxqD26Omiy+PJWePpRLN7KCUBsv31GwyQyES/BvdBAdlQ==
-    size: 210596077
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.5.1/Kommandr-x64.zip
-    sha512: JL1xCnlO93sLdHTadnZMZ6nH4n+p/UUg9lcqZHVQ2cDV7qC2Ziya6dviFq46+/zFt0fbO8RNVNQX7YWpzZTe9g==
-    size: 208905521
-  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.5.1/Kommandr-x64.dmg
-    sha512: yBnQj5FbpzJtuoAySZviYV0fWrhIR3kevU8fBjrI2luZ58uSTj/daO+isgdXr8Sxpj6XWdADpKF29xjvo6XF/Q==
-    size: 217093826
-path: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.5.1/Kommandr-arm64.zip
-sha512: 8+yHoR30wOempX+gWK3zMzKWfed1goOUjvvwnEjJj0xqleoy2EW6YZ0Xj4FHTbXf4zMd5lpnUwA5Jou1/4DSTA==
-releaseDate: 2026-09-04T20:48:50.765Z
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.6.0/Kommandr-arm64.zip
+    sha512: d1/FI5kPR7I5WQfLvFBUNSnVaKjSMYsT0gutAk1V75y2l4j+OwAda6O+TVSpHOmUb88W/ulVqSht+7cQyiTX5Q==
+    size: 201862643
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.6.0/Kommandr-arm64.dmg
+    sha512: MGf6fjKbSUXmZSUg0mqFbY8zcnPxAuvwscSp50PC4xChSw1AJMNJQMRGeA80HGy8s3cFva69GBVR/mP2ne9jyA==
+    size: 210564610
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.6.0/Kommandr-x64.zip
+    sha512: K3YCQ3foni9l15adha/fbx79MZqa7cda2MVtxrmFQ+d9McMH/3wFYvvI8nJq/iKLB0slWr6ixhKACYMohkerXQ==
+    size: 208916650
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.6.0/Kommandr-x64.dmg
+    sha512: Lsjhr+3Us8WIp4STXg3IR5Qja1ASMXUxuTARy3acHx7PncJnQZ6IJWzkbv/dFwbjau6/d/5/3qHKPRwH3QneCw==
+    size: 217135097
+path: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.6.0/Kommandr-arm64.zip
+sha512: d1/FI5kPR7I5WQfLvFBUNSnVaKjSMYsT0gutAk1V75y2l4j+OwAda6O+TVSpHOmUb88W/ulVqSht+7cQyiTX5Q==
+releaseDate: 2026-09-06T19:56:00.767Z
 releaseNotes: >
   ### Highlights
 
-  - Fixed the phone getting stuck on a plain, unstyled "Loading projects…"
-  screen — remote access could end up fighting itself and drop every request
-  after the first.
+  - GPT-6 Astra is in the Codex model picker, with GPT-5.5 and GPT-5.3 Codex
+  Spark; the models OpenAI has retired are gone.
+
+  - Codex effort levels now read Light, Medium, High and Extra High, plus Ultra
+  on GPT-6 Astra, GPT-5.6 Sol and GPT-5.6 Terra.
+
+  - Settings → AI Providers opens on what it last knew and shows a spinner while
+  it re-checks, instead of "Not detected" on every provider for several seconds.
+
+  - Detecting AI providers is several times faster and no longer freezes the app
+  while it runs.
+
+
+  ### New Features
+
+  - OpenAI's new GPT-6 Astra is in the Codex model picker, alongside GPT-5.5 and
+  GPT-5.3 Codex Spark, so the list matches OpenAI's current lineup. GPT-5.4,
+  GPT-5.3 Codex and GPT-5.2, which OpenAI has retired, are gone from the picker.
+
+  - Codex effort levels now read as they do in the Codex app — Light, Medium,
+  High, Extra High — with a new Ultra level on GPT-6 Astra, GPT-5.6 Sol and
+  GPT-5.6 Terra. Switching to a model that doesn't offer Ultra steps the effort
+  down to Extra High instead of leaving a level the model can't run.
 
 
   ### Fixes
 
-  - Fixed the phone loading a plain, unstyled page stuck on "Loading projects…".
-  Restarting remote access could leave the Mac holding two connections at once;
-  because only the newest counts, the two knocked each other offline about twice
-  a second and nothing after the first page request got through — and it stayed
-  that way until the app was restarted. Remote access now keeps a single
-  connection, and restarting it replaces that connection cleanly instead of
-  leaving the old one fighting the new one.
+  - Settings → AI Providers no longer shows every provider as "Not detected" for
+  several seconds after opening. The page now shows what it last knew right
+  away, with a spinner in the section heading while it verifies which CLIs are
+  installed and signed in, and a provider it has no record of yet reads
+  "Checking…" instead of a false "Not detected".
+
+  - Detecting AI providers is several times faster and no longer freezes the
+  rest of the app while it runs. The seven CLIs are now checked at the same time
+  instead of one after another, and a Kommandr-installed CLI reports its version
+  from disk instead of being launched to ask — which took over a second per
+  provider right after an update. Each scan also writes one timing line to the
+  settings log, so a slow one can be diagnosed.
+
+  - Settings could keep showing an old version number for a provider after it
+  had updated (Gemini CLI read 0.50.0 with 0.58.0 installed). The version now
+  comes from the installed package itself.
