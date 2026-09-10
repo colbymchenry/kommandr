@@ -1,5 +1,14 @@
 # Kommandr for Mac
 
+## [0.1.4] - 2026-09-10
+
+### Highlights
+- A simpler update window with clear version details and release notes.
+
+### Improvements
+- Smaller controls and tighter spacing that match the rest of Kommandr.
+- Clear download progress and restart actions.
+
 ## [0.1.3] - 2026-09-10
 
 ### Highlights
