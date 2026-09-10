@@ -1,5 +1,16 @@
 # Kommandr for Mac
 
+## [0.1.3] - 2026-09-10
+
+### Highlights
+- Connect the apps your bots need from Marketplace recommendation cards in chat.
+- Find suitable integrations across the growing Marketplace catalog.
+
+### Improvements
+- Recommendation cards show the plugin's logo, description, and connection status.
+- Bots continue after setup and permission review are complete, and respect dismissed recommendations.
+- Available through the in-app updater for Apple Silicon and Intel Macs.
+
 ## [0.1.2] - 2026-09-10
 
 ### Highlights

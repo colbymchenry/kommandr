@@ -1,30 +1,35 @@
-version: 0.1.2
+version: 0.1.3
 files:
-  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.2/Kommandr-Workspace-0.1.2-arm64.zip
-    sha512: Ax6RwSena8rHYLBTyCRateV2GlJUMWgBdPBpS+A9qYwzREnNk69Kn4ZV18WSUtRD4C0z4eGa0V7lpmAjlkUB7g==
-    size: 115093931
-  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.2/Kommandr-Workspace-0.1.2-arm64.dmg
-    sha512: HMxxBs2akGavVxbTOzhOXbKcUA0Zicx/SeUacdi4pkWqSKrLHU6t4c3INXnuMlT71Juq0j0exfzj1ccbBNCoYQ==
-    size: 115353540
-  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.2/Kommandr-Workspace-0.1.2-x64.zip
-    sha512: D72KgCKV7G/NplgbMM68TU8tmT5D9pCOSwC7mlit5w2r87f5GlEi5EDcZ0RdegkusU1ys7sjq49uFhlUdHLuyA==
-    size: 121158296
-  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.2/Kommandr-Workspace-0.1.2-x64.dmg
-    sha512: Oe/ASk+1UYlbn+o3Yj3jz3Dkqlv3IabzP/nfT2tqaFtkWky817SRO/dic0otnoTerSMqCOmUtw+s0NKGmi4q/g==
-    size: 121362153
-path: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.2/Kommandr-Workspace-0.1.2-arm64.zip
-sha512: Ax6RwSena8rHYLBTyCRateV2GlJUMWgBdPBpS+A9qYwzREnNk69Kn4ZV18WSUtRD4C0z4eGa0V7lpmAjlkUB7g==
-releaseDate: 2026-09-10T16:25:46.365Z
+  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.3/Kommandr-Workspace-0.1.3-arm64.zip
+    sha512: NxUqfKXYYuERV2XDLIjjr6j9pG29kot9Y2hsMOs95wON8ioHmSVV1dmnl6THnwUkAih5U4873gUbtD4xB/MP6w==
+    size: 115093902
+  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.3/Kommandr-Workspace-0.1.3-arm64.dmg
+    sha512: 54i5/ZBlq0F+VOw0sBvZYC2CiAgEnSHTgFdnZfENAATPKcZgY1TSNSLCPCM9HybN8KSfvJVW/NEEKFODD+HU7Q==
+    size: 115353470
+  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.3/Kommandr-Workspace-0.1.3-x64.zip
+    sha512: pA/vdt1cG0r8OZU2Idx/jMfOf8hvc26yqfb1hGwlJSgi81wOw6Hg9Ynz4G+WwIQHxxq2Ye5RjY51VHov+LHEGg==
+    size: 121158238
+  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.3/Kommandr-Workspace-0.1.3-x64.dmg
+    sha512: OJYRG0hjmBKPLZ3zTyYgqXjgt8ljE7ofpN6TUoM5HwR4oSP5WrwswhOhHM81TkMtAX434YAnh3/mACUQFIKeVA==
+    size: 121362243
+path: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.3/Kommandr-Workspace-0.1.3-arm64.zip
+sha512: NxUqfKXYYuERV2XDLIjjr6j9pG29kot9Y2hsMOs95wON8ioHmSVV1dmnl6THnwUkAih5U4873gUbtD4xB/MP6w==
+releaseDate: 2026-09-10T18:08:50.996Z
 releaseNotes: >
   ### Highlights
 
-  - Maintenance update for more reliable Mac release and update delivery.
+  - Connect the apps your bots need from Marketplace recommendation cards in
+  chat.
+
+  - Find suitable integrations across the growing Marketplace catalog.
 
 
   ### Improvements
 
-  - Mac releases complete automatically after both signed and notarized builds
-  pass verification.
+  - Recommendation cards show the plugin's logo, description, and connection
+  status.
 
-  - Downloads remain available for Apple Silicon and Intel from the public
-  release page.
+  - Bots continue after setup and permission review are complete, and respect
+  dismissed recommendations.
+
+  - Available through the in-app updater for Apple Silicon and Intel Macs.
