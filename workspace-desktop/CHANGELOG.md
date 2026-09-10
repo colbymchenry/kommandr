@@ -1,5 +1,14 @@
 # Kommandr for Mac
 
+## [0.1.2] - 2026-09-10
+
+### Highlights
+- Maintenance update for more reliable Mac release and update delivery.
+
+### Improvements
+- Mac releases complete automatically after both signed and notarized builds pass verification.
+- Downloads remain available for Apple Silicon and Intel from the public release page.
+
 ## [0.1.1] - 2026-09-10
 
 ### Highlights
