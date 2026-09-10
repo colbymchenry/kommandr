@@ -1,20 +1,34 @@
 # Kommandr
 
-AI-assisted project management for software teams: a macOS desktop app that keeps your
-issues, epics and sprints next to the AI coding agents that work on them — Claude Code,
-Codex, Gemini, Cursor, Copilot and more — with a phone companion to check on runs from anywhere.
+Your own little team. Talk to your bots, share their workspace, and open their desktops whenever you need to lend a hand.
 
-This repository holds **releases only** — the desktop app builds and the changelog. Source
-lives in private repositories.
+## Download Kommandr for Mac
 
-## Kommandr desktop app (macOS)
-
-Download the latest build, open the `.dmg`, and drag Kommandr to Applications:
+**[Download the new Kommandr app](https://kommandr.com/download)**
 
 | Mac | Download |
 |---|---|
-| Apple silicon (M1 and later) | [Kommandr-arm64.dmg](https://github.com/colbymchenry/kommandr/releases/latest/download/Kommandr-arm64.dmg) |
-| Intel | [Kommandr-x64.dmg](https://github.com/colbymchenry/kommandr/releases/latest/download/Kommandr-x64.dmg) |
+| Apple Silicon (M1 and later) | [Download for Apple Silicon](https://kommandr.com/download/mac?arch=arm64) |
+| Intel | [Download for Intel](https://kommandr.com/download/mac?arch=x64) |
+
+Requires macOS 13 or later. Open the DMG and drag Kommandr to Applications.
+
+The app checks for updates automatically and shows what's new before you download. Restart whenever you're ready. Builds are Developer ID signed and notarized by Apple.
+
+[Latest release](https://github.com/colbymchenry/kommandr/releases/latest) · [What's new](./workspace-desktop/CHANGELOG.md) · [Open in your browser](https://kommandr.com/app)
+
+This repository contains public downloads and release notes. The app is built from private source repositories; no source code or signing credentials are included here.
+
+## Earlier developer app
+
+The earlier Kommandr app manages software projects, issues, and coding agents. Its installers and update feed remain available separately from the new workspace app.
+
+Download the earlier developer app, open the `.dmg`, and drag Kommandr to Applications:
+
+| Mac | Download |
+|---|---|
+| Apple silicon (M1 and later) | [Kommandr-arm64.dmg](https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.6.1/Kommandr-arm64.dmg) |
+| Intel | [Kommandr-x64.dmg](https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.6.1/Kommandr-x64.dmg) |
 
 Every build is Developer ID signed and notarized by Apple. The app checks for updates
 itself and offers to install them; see [CHANGELOG.md](./CHANGELOG.md) for what's in each
@@ -25,7 +39,7 @@ version, or browse the [releases](https://github.com/colbymchenry/kommandr/relea
 Windows and Linux builds are not available yet. This is an early alpha — expect rough edges,
 and please report anything broken.
 
-### Phone companion
+### Earlier phone companion
 
 The Kommandr iOS app pairs with the desktop app by QR code so you can follow task runs,
 answer an agent's questions, and start work from your phone. It is distributed through
