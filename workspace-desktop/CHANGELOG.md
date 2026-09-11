@@ -1,5 +1,15 @@
 # Kommandr for Mac
 
+## [0.1.5] - 2026-09-10
+
+### Highlights
+- Find your Claude Code memories and instructions automatically, organized by project.
+
+### Improvements
+- Add a repository folder without searching for individual memory files.
+- Review selected notes before bringing them into your bot’s editable memory.
+- A simpler import flow with project choices and optional file or pasted notes.
+
 ## [0.1.4] - 2026-09-10
 
 ### Highlights
