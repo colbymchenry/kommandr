@@ -1,32 +1,34 @@
-version: 0.1.5
+version: 0.1.6
 files:
-  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.5/Kommandr-Workspace-0.1.5-arm64.zip
-    sha512: 9i1UuPpIXN0i5XfrH7lCswCVuoVtKpnd6F8M0e3NucFFLh8Q18T6MO+ZmNl9QEybb8JSbn9yi1N2VLeBhNOn8A==
-    size: 115098409
-  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.5/Kommandr-Workspace-0.1.5-arm64.dmg
-    sha512: pUfLSzZKZ8mA68+osEySt/ZFW9n8GJ0zgZdp1Z28moVQPMJnTf6liBsuocL8MWkgjU9DE7GaGyF/K5/oCW0Eqw==
-    size: 115360885
-  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.5/Kommandr-Workspace-0.1.5-x64.zip
-    sha512: QAcyMvcNtMud8Uorxcdwm6MxVX94W32BLY1V/InOYb/go3XCT3mPM8o+6L6cwKngrjU70maMcb/fSw74lPLb2Q==
-    size: 121162713
-  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.5/Kommandr-Workspace-0.1.5-x64.dmg
-    sha512: LQMPUCZTXyU8Cg+gUhyif9MsvQkJJbIYv0q3DAsU12Z3iM8N7aPNAqBaE2ARoSndNk2AiFOOIqe0qtAWlrUbvw==
-    size: 121373679
-path: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.5/Kommandr-Workspace-0.1.5-arm64.zip
-sha512: 9i1UuPpIXN0i5XfrH7lCswCVuoVtKpnd6F8M0e3NucFFLh8Q18T6MO+ZmNl9QEybb8JSbn9yi1N2VLeBhNOn8A==
-releaseDate: 2026-09-11T00:57:21.527Z
+  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.6/Kommandr-Workspace-0.1.6-arm64.zip
+    sha512: DuGFmvZ5MZTe4cAtizwdgdXjXBRxRMj+4NcH3iB0eTVAug0RnBAoIs0Od7VL5qNAjgZTGadR/ecmjcHyVcelOQ==
+    size: 115098562
+  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.6/Kommandr-Workspace-0.1.6-arm64.dmg
+    sha512: MN7dKbAT5OgPMPoxC0M1pHG8CPPAqAg4sh36Gumr46NcJg5OUZ7NTfFGIZPGou6R++cyn+2M0EFy7QONiS2pAA==
+    size: 115361617
+  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.6/Kommandr-Workspace-0.1.6-x64.zip
+    sha512: p6eiHdVHyDwvuvEK4WA6noIFNC8Itl6Yt3kzxWf3LlgbiEHlr74M05ohvX4tGjNsQLetTdVoisfGQMNyo8Qbpw==
+    size: 121162955
+  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.6/Kommandr-Workspace-0.1.6-x64.dmg
+    sha512: +7pnO9codM9SdcF/P3VAV/uVfaaQ3kFnOb6mujPmqk/8HPWZTO/TjmsLVB/2zSIqweJtVhbR37GOvWtYnScqew==
+    size: 121373373
+path: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.6/Kommandr-Workspace-0.1.6-arm64.zip
+sha512: DuGFmvZ5MZTe4cAtizwdgdXjXBRxRMj+4NcH3iB0eTVAug0RnBAoIs0Od7VL5qNAjgZTGadR/ecmjcHyVcelOQ==
+releaseDate: 2026-09-11T20:09:00.441Z
 releaseNotes: >
   ### Highlights
 
-  - Find your Claude Code memories and instructions automatically, organized by
-  project.
+  - Sign in or create your account directly in Kommandr.
 
 
   ### Improvements
 
-  - Add a repository folder without searching for individual memory files.
+  - Complete email verification and continue into your workspace in the same
+  window.
 
-  - Review selected notes before bringing them into your bot’s editable memory.
+  - A simpler sign-in screen with the animated Kommandr mascot.
 
-  - A simpler import flow with project choices and optional file or pasted
-  notes.
+  - Browser sign-in stays available as an optional fallback.
+
+  - Return from browser sign-in without leaving a pending connection attempt
+  running.

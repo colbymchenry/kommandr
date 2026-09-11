@@ -1,8 +1,8 @@
 {
-  "version": "0.1.5",
-  "releaseDate": "2026-09-11T00:57:21.527Z",
+  "version": "0.1.6",
+  "releaseDate": "2026-09-11T20:09:00.441Z",
   "downloads": {
-    "arm64": "https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.5/Kommandr-Workspace-0.1.5-arm64.dmg",
-    "x64": "https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.5/Kommandr-Workspace-0.1.5-x64.dmg"
+    "arm64": "https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.6/Kommandr-Workspace-0.1.6-arm64.dmg",
+    "x64": "https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.6/Kommandr-Workspace-0.1.6-x64.dmg"
   }
 }

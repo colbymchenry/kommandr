@@ -1,5 +1,16 @@
 # Kommandr for Mac
 
+## [0.1.6] - 2026-09-11
+
+### Highlights
+- Sign in or create your account directly in Kommandr.
+
+### Improvements
+- Complete email verification and continue into your workspace in the same window.
+- A simpler sign-in screen with the animated Kommandr mascot.
+- Browser sign-in stays available as an optional fallback.
+- Return from browser sign-in without leaving a pending connection attempt running.
+
 ## [0.1.5] - 2026-09-10
 
 ### Highlights
