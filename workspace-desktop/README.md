@@ -1,10 +1,10 @@
-# Kommandr Workspace for Mac
+# Hoblets for Mac
 
 Your own little team, at home on your Mac.
 
-**[Download Kommandr](https://kommandr.com/download)** — Apple Silicon and Intel, macOS 13 or later.
+**[Download Hoblets](https://hoblets.com/download)** — Apple Silicon and Intel, macOS 13 or later.
 
-The app checks for updates automatically. Open **Kommandr → Check for Updates** to view the available version, read what changed, and download it. Choose **Restart & update** whenever you’re ready.
+The app checks for updates automatically. Open **Hoblets → Check for Updates** to view the available version, read what changed, and download it. Choose **Restart & update** whenever you’re ready.
 
 [Release notes](./CHANGELOG.md)
 
