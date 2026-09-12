@@ -1,34 +1,22 @@
-version: 0.1.6
+version: 0.1.7
 files:
-  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.6/Kommandr-Workspace-0.1.6-arm64.zip
-    sha512: DuGFmvZ5MZTe4cAtizwdgdXjXBRxRMj+4NcH3iB0eTVAug0RnBAoIs0Od7VL5qNAjgZTGadR/ecmjcHyVcelOQ==
-    size: 115098562
-  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.6/Kommandr-Workspace-0.1.6-arm64.dmg
-    sha512: MN7dKbAT5OgPMPoxC0M1pHG8CPPAqAg4sh36Gumr46NcJg5OUZ7NTfFGIZPGou6R++cyn+2M0EFy7QONiS2pAA==
-    size: 115361617
-  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.6/Kommandr-Workspace-0.1.6-x64.zip
-    sha512: p6eiHdVHyDwvuvEK4WA6noIFNC8Itl6Yt3kzxWf3LlgbiEHlr74M05ohvX4tGjNsQLetTdVoisfGQMNyo8Qbpw==
-    size: 121162955
-  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.6/Kommandr-Workspace-0.1.6-x64.dmg
-    sha512: +7pnO9codM9SdcF/P3VAV/uVfaaQ3kFnOb6mujPmqk/8HPWZTO/TjmsLVB/2zSIqweJtVhbR37GOvWtYnScqew==
-    size: 121373373
-path: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.6/Kommandr-Workspace-0.1.6-arm64.zip
-sha512: DuGFmvZ5MZTe4cAtizwdgdXjXBRxRMj+4NcH3iB0eTVAug0RnBAoIs0Od7VL5qNAjgZTGadR/ecmjcHyVcelOQ==
-releaseDate: 2026-09-11T20:09:00.441Z
-releaseNotes: >
+  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.7/Hoblets-0.1.7-arm64.zip
+    sha512: 9DUywZLXvEBqy/Nho6CXkm5miQGbQ+nOYgxLymwM9uf6UnAz0JZaI5NMuJvy7/t1W0lqHXVsLbBprOUPLGaypA==
+    size: 115098276
+  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.7/Hoblets-0.1.7-arm64.dmg
+    sha512: XTveK7ddZh6mtMKkcJod/uI2JzUJPxi/0+7ITlU+mC2uJ2QLZjZ3VORl8LmUVkMNhIg9Bjm1EV26m4hVGHHv4A==
+    size: 115328834
+  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.7/Hoblets-0.1.7-x64.zip
+    sha512: Xxt/vNoJK+z5WsDqug/uaN9sCnlTrCt/tw2XIcAXGcKoZ8xdGRb7o/pYgM8no6ywRvvURYPcipSYGU3rVtL0xw==
+    size: 121162646
+  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.7/Hoblets-0.1.7-x64.dmg
+    sha512: Y1fhPM8PwD+flYpVT8qIEeUtYDIsdHe6mCBj1BGBmEL6PQieD948GaB/qQbTeacr4UCvIXAS8f9g2N6c1uAJnQ==
+    size: 121377050
+path: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.7/Hoblets-0.1.7-arm64.zip
+sha512: 9DUywZLXvEBqy/Nho6CXkm5miQGbQ+nOYgxLymwM9uf6UnAz0JZaI5NMuJvy7/t1W0lqHXVsLbBprOUPLGaypA==
+releaseDate: 2026-09-12T02:23:05.547Z
+releaseNotes: |
   ### Highlights
 
-  - Sign in or create your account directly in Kommandr.
-
-
-  ### Improvements
-
-  - Complete email verification and continue into your workspace in the same
-  window.
-
-  - A simpler sign-in screen with the animated Kommandr mascot.
-
-  - Browser sign-in stays available as an optional fallback.
-
-  - Return from browser sign-in without leaving a pending connection attempt
-  running.
+  - Kommandr is now Hoblets, with the workspace and sign-in at hoblets.com.
+  - Keeps your existing desktop profile and update channel.

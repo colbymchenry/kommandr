@@ -1,8 +1,8 @@
 {
-  "version": "0.1.6",
-  "releaseDate": "2026-09-11T20:09:00.441Z",
+  "version": "0.1.7",
+  "releaseDate": "2026-09-12T02:23:05.547Z",
   "downloads": {
-    "arm64": "https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.6/Kommandr-Workspace-0.1.6-arm64.dmg",
-    "x64": "https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.6/Kommandr-Workspace-0.1.6-x64.dmg"
+    "arm64": "https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.7/Hoblets-0.1.7-arm64.dmg",
+    "x64": "https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.7/Hoblets-0.1.7-x64.dmg"
   }
 }
