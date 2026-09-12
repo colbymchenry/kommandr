@@ -1,5 +1,12 @@
 # Hoblets for Mac
 
+## [0.1.8] - 2026-09-11
+
+### Highlights
+
+- Updates now use the renamed Hoblets release repository.
+- Existing installations keep their settings and can update normally.
+
 ## [0.1.7] - 2026-09-11
 
 ### Highlights

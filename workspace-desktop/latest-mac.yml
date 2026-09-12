@@ -1,22 +1,22 @@
-version: 0.1.7
+version: 0.1.8
 files:
-  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.7/Hoblets-0.1.7-arm64.zip
-    sha512: 9DUywZLXvEBqy/Nho6CXkm5miQGbQ+nOYgxLymwM9uf6UnAz0JZaI5NMuJvy7/t1W0lqHXVsLbBprOUPLGaypA==
-    size: 115098276
-  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.7/Hoblets-0.1.7-arm64.dmg
-    sha512: XTveK7ddZh6mtMKkcJod/uI2JzUJPxi/0+7ITlU+mC2uJ2QLZjZ3VORl8LmUVkMNhIg9Bjm1EV26m4hVGHHv4A==
-    size: 115328834
-  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.7/Hoblets-0.1.7-x64.zip
-    sha512: Xxt/vNoJK+z5WsDqug/uaN9sCnlTrCt/tw2XIcAXGcKoZ8xdGRb7o/pYgM8no6ywRvvURYPcipSYGU3rVtL0xw==
-    size: 121162646
-  - url: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.7/Hoblets-0.1.7-x64.dmg
-    sha512: Y1fhPM8PwD+flYpVT8qIEeUtYDIsdHe6mCBj1BGBmEL6PQieD948GaB/qQbTeacr4UCvIXAS8f9g2N6c1uAJnQ==
-    size: 121377050
-path: https://github.com/colbymchenry/kommandr/releases/download/workspace-v0.1.7/Hoblets-0.1.7-arm64.zip
-sha512: 9DUywZLXvEBqy/Nho6CXkm5miQGbQ+nOYgxLymwM9uf6UnAz0JZaI5NMuJvy7/t1W0lqHXVsLbBprOUPLGaypA==
-releaseDate: 2026-09-12T02:23:05.547Z
+  - url: https://github.com/colbymchenry/hoblets/releases/download/workspace-v0.1.8/Hoblets-0.1.8-arm64.zip
+    sha512: T/VLb7ouexOW/G9CEXXw1VhPgLxbnLpsEaYGXVIZSa4z5FOd7dHIZXQZUo7zYej6Pk4nfYzF41COsEQnWy7F7Q==
+    size: 115098297
+  - url: https://github.com/colbymchenry/hoblets/releases/download/workspace-v0.1.8/Hoblets-0.1.8-arm64.dmg
+    sha512: qRxYhE2epiUURuyb8fJJI6jRBGqk/vRbGo5gqHJuXTd5XZR3zPzHuMabp8w2PNHiVaWFxHouH/V0VteIyw0ofg==
+    size: 115329433
+  - url: https://github.com/colbymchenry/hoblets/releases/download/workspace-v0.1.8/Hoblets-0.1.8-x64.zip
+    sha512: 6L5RKnAvdx2s/94VQn+VQu0tSETaOd2fZ5Jp19UNXU10Rzbq3SzvbWR7rr/t5t0RqUmIllpg0hEpIJaz6xqnUw==
+    size: 121162659
+  - url: https://github.com/colbymchenry/hoblets/releases/download/workspace-v0.1.8/Hoblets-0.1.8-x64.dmg
+    sha512: ivjIlyQLt4sgYGcmvnuQk04nQbl4/PmkJ9I+quKjFSaijLT3c+v5SbCR14ut4KGsrwHOqGnLsmdspbc0frvYdA==
+    size: 121376226
+path: https://github.com/colbymchenry/hoblets/releases/download/workspace-v0.1.8/Hoblets-0.1.8-arm64.zip
+sha512: T/VLb7ouexOW/G9CEXXw1VhPgLxbnLpsEaYGXVIZSa4z5FOd7dHIZXQZUo7zYej6Pk4nfYzF41COsEQnWy7F7Q==
+releaseDate: 2026-09-12T03:34:38.913Z
 releaseNotes: |
   ### Highlights
 
-  - Kommandr is now Hoblets, with the workspace and sign-in at hoblets.com.
-  - Keeps your existing desktop profile and update channel.
+  - Updates now use the renamed Hoblets release repository.
+  - Existing installations keep their settings and can update normally.
