@@ -1,0 +1,82 @@
+name: Copy Kommandr releases from the Hoblets repo
+
+# One-time migration. Kommandr's desktop releases used to live in
+# colbymchenry/hoblets. This copies every desktop-v* release (title, notes and
+# assets) here, oldest first, points each release's latest-mac.yml at this repo,
+# and checks every copied asset against the original's size and SHA-256.
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      GH_TOKEN: ${{ github.token }}
+      SRC: colbymchenry/hoblets
+      DST: ${{ github.repository }}
+    steps:
+      - name: List desktop releases in the source repo
+        run: |
+          set -euo pipefail
+          gh api "repos/$SRC/releases" --paginate \
+            -q '.[] | select(.draft == false) | .tag_name | select(startswith("desktop-v"))' \
+            | sort -V > "$RUNNER_TEMP/tags"
+          cat "$RUNNER_TEMP/tags"
+          [ -s "$RUNNER_TEMP/tags" ]
+
+      - name: Copy releases, oldest first
+        run: |
+          set -euo pipefail
+          for tag in $(cat "$RUNNER_TEMP/tags"); do
+            if gh release view "$tag" -R "$DST" >/dev/null 2>&1; then
+              echo "$tag is already here"
+              continue
+            fi
+            dir="$RUNNER_TEMP/copy/$tag"
+            mkdir -p "$dir/assets"
+            gh api "repos/$SRC/releases/tags/$tag" > "$dir/release.json"
+            jq -r '.body // ""' "$dir/release.json" > "$dir/notes.md"
+            gh release download "$tag" -R "$SRC" --dir "$dir/assets"
+            if [ -f "$dir/assets/latest-mac.yml" ]; then
+              sed -i "s#github.com/$SRC/releases/download/#github.com/$DST/releases/download/#g" "$dir/assets/latest-mac.yml"
+            fi
+            gh release create "$tag" -R "$DST" --target main \
+              --title "$(jq -r .name "$dir/release.json")" \
+              --notes-file "$dir/notes.md" --latest=false "$dir"/assets/*
+            rm -rf "$dir"
+            echo "Copied $tag"
+          done
+          gh release edit "$(tail -n 1 "$RUNNER_TEMP/tags")" -R "$DST" --latest
+
+      - name: Verify every asset against the original
+        run: |
+          set -euo pipefail
+          fail=0
+          q='.assets[] | select(.name != "latest-mac.yml") | "\(.name) \(.size) \(.digest)"'
+          for tag in $(cat "$RUNNER_TEMP/tags"); do
+            ok=1
+            src=$(gh api "repos/$SRC/releases/tags/$tag" -q "$q" | sort)
+            dst=$(gh api "repos/$DST/releases/tags/$tag" -q "$q" | sort)
+            if [ "$src" != "$dst" ]; then
+              echo "::error::$tag: assets differ"
+              diff <(echo "$src") <(echo "$dst") || true
+              ok=0
+            fi
+            want=$(gh release download "$tag" -R "$SRC" -p latest-mac.yml -O - \
+              | sed "s#github.com/$SRC/releases/download/#github.com/$DST/releases/download/#g")
+            got=$(gh release download "$tag" -R "$DST" -p latest-mac.yml -O -)
+            if [ "$want" != "$got" ]; then
+              echo "::error::$tag: latest-mac.yml differs"
+              ok=0
+            fi
+            if [ "$ok" = 1 ]; then
+              echo "$tag OK: $(echo "$dst" | wc -l) assets match, latest-mac.yml points here"
+            else
+              fail=1
+            fi
+          done
+          exit "$fail"

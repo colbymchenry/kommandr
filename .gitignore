@@ -1,0 +1,8 @@
+# Kommandr public downloads: README, CHANGELOG, update feed and CLI installers only.
+# Binaries ship as GitHub Release assets, never committed to git.
+kommandr-*
+*.bak
+dist/
+VERSION
+*-output.txt
+.DS_Store
