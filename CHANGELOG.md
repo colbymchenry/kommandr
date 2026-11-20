@@ -254,6 +254,7 @@ and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 [0.5.1]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.5.1
 [0.6.0]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.6.0
 [0.6.1]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.6.1
+[0.6.2]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.6.2
 [0.6.3]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.6.3
 [0.6.4]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.6.4
 [0.6.5]: https://github.com/colbymchenry/kommandr/releases/tag/desktop-v0.6.5

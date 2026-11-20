@@ -1,18 +1,18 @@
 version: 0.6.6
 files:
-  - url: https://github.com/colbymchenry/hoblets/releases/download/desktop-v0.6.6/Kommandr-arm64.zip
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.6.6/Kommandr-arm64.zip
     sha512: 4vEDhr7U7ZK9kXWNBbK9fCFCOUlxRfdBlJEOQrZ/0xcSFpKcTZlYjvYqqSnJyrHuqu7u8Zk8qtLbGbwiLCiBSw==
     size: 199995853
-  - url: https://github.com/colbymchenry/hoblets/releases/download/desktop-v0.6.6/Kommandr-arm64.dmg
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.6.6/Kommandr-arm64.dmg
     sha512: 0Ob3hUo1lNzgsBZ4m985C0ekdoVn4gGT6bLJLI0UMHt2jRka+n3DDc2WHSA4Fcq+P86VYmhklNic70yEixRn6Q==
     size: 209628873
-  - url: https://github.com/colbymchenry/hoblets/releases/download/desktop-v0.6.6/Kommandr-x64.zip
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.6.6/Kommandr-x64.zip
     sha512: U4qNpcEzs9JFxDfPrVhxqyY+kc5PmeyNrhrPO0h2fkCPnDKFfNIuuPgRg27dsypocNbEH8Pezz0GjzYiy2krrg==
     size: 208804910
-  - url: https://github.com/colbymchenry/hoblets/releases/download/desktop-v0.6.6/Kommandr-x64.dmg
+  - url: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.6.6/Kommandr-x64.dmg
     sha512: 8c4itJBA5MolmB6ftcs36qCWPaXxeKD8rrUUDfocm5vr9BEice8w91w+DaSHnfwFpM88jRPXEbn1EXu6IuyRwA==
     size: 217655754
-path: https://github.com/colbymchenry/hoblets/releases/download/desktop-v0.6.6/Kommandr-arm64.zip
+path: https://github.com/colbymchenry/kommandr/releases/download/desktop-v0.6.6/Kommandr-arm64.zip
 sha512: 4vEDhr7U7ZK9kXWNBbK9fCFCOUlxRfdBlJEOQrZ/0xcSFpKcTZlYjvYqqSnJyrHuqu7u8Zk8qtLbGbwiLCiBSw==
 releaseDate: 2026-09-23T23:10:26.008Z
 releaseNotes: >
